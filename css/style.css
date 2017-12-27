@@ -166,6 +166,48 @@ body {
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(0px); }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 45%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    transition: all .5s;
+    background: #fff; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      left: 20%;
+      top: -2rem; }
+    .composition__photo--p3 {
+      left: 40%;
+      top: -2rem; }
+    .composition__photo--p4 {
+      left: 60%;
+      top: -2rem; }
+    .composition__photo--p5 {
+      left: 0;
+      top: 12rem; }
+    .composition__photo--p6 {
+      left: 20%;
+      top: 12rem; }
+    .composition__photo--p7 {
+      left: 40%;
+      top: 12rem; }
+    .composition__photo--p8 {
+      left: 60%;
+      top: 12rem; }
+    .composition__photo:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 2; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .header {
   position: relative;
   height: 95vh;
