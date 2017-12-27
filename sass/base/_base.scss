@@ -7,9 +7,9 @@
   box-sizing: inherit; 
 }
 
-//custom font size to make it easier to convert to rem
+//custom font size to make it easier to convert to rem, defines what 1rem is
 //made font-size a percenatge so it would be easier for user to change in the browser
-//62.5% of 16px is 10px(root font-size), ex: 30px = 3rem, 50px = 5rem
+//62.5% of 16px is 10px ex: 30px = 3rem, 50px = 5rem
 html {
   font-size: 62.5%;
 }
