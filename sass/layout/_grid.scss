@@ -1,0 +1,54 @@
+//adding width and centering content 
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  //excluding bottom margin for last row
+  &:not(:last-child){
+    margin-bottom: $gutter-vertical;
+  }
+
+  //clearing float mixin
+  @include clearfix;
+
+  //making content be side by side in column
+  //the syntax below means any element that has a class starting with 'col-'
+  [class^="col-"] {
+    float: left;
+    //adding margin-right to every column instead of the last
+    &:not(:last-child){
+      margin-right: $gutter-horizontal;
+    }
+  }
+  
+  //row of 2
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  //row of 3
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  }
+  
+  //row of 4
+  .col-1-of-4 {
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+  }
+  
+  //row of 2 col-1-of-3 combined
+  .col-2-of-3 {
+    width: calc(2 * ((100% - 2  * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+  }
+  
+  //row of 2 col-1-of-4 combined
+  .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+  }
+  
+  //row of 3 col-1-of-4 combined
+  .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+  }
+}
+

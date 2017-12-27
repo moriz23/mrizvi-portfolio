@@ -1,0 +1,36 @@
+//dimensions and background image  of header-primary section
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient( 
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)),
+  url(../img/lebron.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  //nike logo placement and animation
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
+  
+  //height of nike logo
+  &__logo {
+    height: 8rem;
+  }
+  
+  //animation and placement of header-primary text
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

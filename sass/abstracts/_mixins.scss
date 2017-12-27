@@ -1,0 +1,8 @@
+//mixin for for elements being floated so height won't be 0
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
