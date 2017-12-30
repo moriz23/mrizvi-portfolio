@@ -1,6 +1,24 @@
-//about section styling
-.section-about {
+//experience section styling
+.section-experience {
   background: $color-gray-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
+}
+//about section styling
+.section-about {
+  padding: 20rem 0;
+  background-image: linear-gradient( 
+    to right bottom,
+    rgba($color-primary-dark, 0.8),
+    rgba($color-primary-light, 0.8)),
+  url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  //styling the direct children of .section-about, which is .row
+  //this will make the about section boxes to not be slanted 
+  // * means all of the children, but placing > in front means you just want the direct child(s)
+  & > * {
+    transform: skewY(7deg);
+  }
 }
