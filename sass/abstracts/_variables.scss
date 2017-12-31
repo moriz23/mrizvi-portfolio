@@ -1,13 +1,24 @@
-//colors
+//gradient color for overlay of background images 
 $color-primary: #1779ba;
 $color-primary-light: #1CB5E0;
 $color-primary-dark: #000046;
+
+//background colors for project cards
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+//section background color with no background image
+$color-gray-light-1: #f7f7f7;
+
+//font colors
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
-$color-gray-light-1: #f7f7f7;
 
-//font 
+
+//default font sizes
 $default-font-size: 1.6rem;
 
 //grid

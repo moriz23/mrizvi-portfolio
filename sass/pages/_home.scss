@@ -4,6 +4,7 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
 //about section styling
 .section-about {
   padding: 20rem 0;
@@ -21,4 +22,11 @@
   & > * {
     transform: skewY(7deg);
   }
+}
+
+//projects section styling 
+.section-projects {
+  background: $color-gray-light-1;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
 }

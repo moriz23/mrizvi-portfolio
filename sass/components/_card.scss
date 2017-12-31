@@ -1,0 +1,51 @@
+.card {
+  //found the right perspective to make the card look like it flipping towards you
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  
+  //styling of card when not hover (static)
+  &__side {
+    color: $color-white;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //hides the backface of card(the flipped side)
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    
+    //styling for front of the card(non flipped side)
+    &--front {
+      background-color: $color-white;
+    }
+    
+    //styling for back of card(flipped side)
+    &--back {
+      //needs to be flipped to 180 degrees before hover effect
+      transform: rotateY(180deg); 
+      
+      //background color for back of card
+      &-1 {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      }
+    }
+  }
+  
+  //.card:hover .card__side--front
+  //flipping card 180 degrees when hovered, this will show the back side
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  //.card:hover .card__side--back
+  //returning card back to the front side at 0 degrees
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+}
