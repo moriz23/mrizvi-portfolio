@@ -31,7 +31,7 @@
       
       //background color for back of card
       &-1 {
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
       }
     }
   }
@@ -58,13 +58,16 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     //first card image has an orange blend/gradient
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/gym-card-header.png);
+      background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark), url(../img/gym-card-header.png);
     }
+    //second card image green blend/gradient
     &--2 {
-      background-image: url(../img);
+      background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/nat-6.jpg);
+
     }
+    //third card image blue blend gradient
     &--3 {
-      background-image: url(../img);
+      background-image: linear-gradient(to right bottom, $color-blurple-light, $color-blurple-dark), url(../img/nat-7.jpg);
     }
   }
   
@@ -87,7 +90,7 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     &--1 {
-      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+      background-image: linear-gradient(to right bottom, rgba($color-orange-light, .85), rgba($color-orange-dark, .85));
     }
   }
   
@@ -99,5 +102,31 @@
     padding: 2rem 1rem;
     margin: 1rem auto;
     border-bottom: 1px solid $color-gray-light-2;
+  }
+  
+  //back card styling of centering content
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
