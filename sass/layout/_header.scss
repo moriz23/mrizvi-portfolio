@@ -1,3 +1,4 @@
+
 //dimensions and background image  of header-primary section
 .header {
   position: relative;
@@ -11,13 +12,15 @@
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  animation: fadeIn ease 2s;
+
 
   //nike logo placement and animation
   &__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
-    animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom 1.5s ease-out .75s;
     animation-fill-mode: backwards;
   }
   

@@ -1,0 +1,10 @@
+.footer {
+  background-color: $color-gray-dark-3;
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: $color-white;
+  &-flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

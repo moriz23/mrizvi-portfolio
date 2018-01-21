@@ -27,6 +27,18 @@
 //projects section styling 
 .section-projects {
   background: $color-gray-light-1;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+}
+
+//projects section styling 
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
+  background-image: -webkit-linear-gradient(top left, rgba($color-primary-dark, 0.8), rgba($color-primary-light, 0.8)),
+  url(../img/nat-4.jpg);
+  background-image: -o-linear-gradient(top left, rgba($color-primary-dark, 0.8), rgba($color-primary-light, 0.8)),
+  url(../img/nat-4.jpg);
+  background-image: linear-gradient(to bottom right, rgba($color-primary-dark, 0.8), rgba($color-primary-light, 0.8)),
+  url(../img/nat-4.jpg);
 }

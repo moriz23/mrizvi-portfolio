@@ -36,6 +36,15 @@
       background-color: $color-white;
     }
   }
+
+  //blue color of button
+  &--blue {
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      background-color: $color-primary;
+    }
+  }
   //to make ripple effect
   &::after {
     content: "";
