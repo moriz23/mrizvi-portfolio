@@ -14,6 +14,9 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color-black, .1);
+    text-align: center;
+    cursor: pointer;
   }
   
   //menu background
@@ -26,17 +29,19 @@
     right: 6.5rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
-    transform: scale(80);
+    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
   }
   
   //navigation menu
   &__nav {
     height: 100vh;
-    width: 100%;
+    opacity: 0;
+    width: 0;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 1500;
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
   //nav menu list positioned center
@@ -44,6 +49,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%,-50%);
     list-style: none;
     text-align: center;
@@ -76,5 +82,69 @@
       color: $color-primary;
       transform: translateX(1rem);
     }
+  }
+  
+  //when checkbox menu is pressed the nav bacground appears and overlays the content
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+  //the nav links are showed when checkbox menu is pressed
+  &__checkbox:checked ~ &__nav {
+    width: 100%;
+    opacity: 1;
+  }
+  //three bars menu icon
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    //created three horizonatal bars stacked on top of one another
+    //:before is the top bar, & is the middle bar and :after is the bottom bar
+    &,
+    &:before,
+    &:after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-gray-dark-3;
+      display: inline-block;
+    }
+    
+    //made the top and bottom bar to be in absolut position and added animation
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+    &:before { 
+      top: -.8rem;
+    }
+    &:after {
+      top: .8rem;
+    }
+  }
+  &__button:hover &__icon:before {
+    top: -1rem;
+  }
+  &__button:hover &__icon:after {
+    top: 1rem;
+  }
+  
+  //hid middle bar when checkbox menu is pressed
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+  
+  //rotate top bar when checkbox menu is pressed to form a X
+  &__checkbox:checked + &__button &__icon:before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  
+  //rotate bottom bar when checkbox menu is pressed to form a X
+  &__checkbox:checked + &__button &__icon:after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 }
