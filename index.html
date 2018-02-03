@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/icon-font.css">
+        <link rel="stylesheet" type="text/css" href="css/icon-font.css">);
+  </script>
         <title>Mohammed Rizvi | Portfolio</title>
     </head>
     <body>
@@ -45,12 +46,12 @@
         </header> 
         <main>
             <section class="section-experience">
-                <div class="u-center-text u-margin-bottom-large">
+                <div class="u-center-text u-margin-bottom-large" data-aos="fade-up">
                     <h2 class="heading-secondary">
                     Languages and Frameworks I Have Used
                     </h2>   
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col-1-of-2">
                         <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet, consectetur</h3>
                         <p class="paragraph">
@@ -64,14 +65,14 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/html5_logo.png" alt="html-logo" class="composition__photo composition__photo--p1">
-                            <img src="img/css3.png" alt="css-logo" class="composition__photo composition__photo--p2">
-                            <img src="img/js.png" alt="javascript-logo" class="composition__photo composition__photo--p3">
-                            <img src="img/angular.png" alt="angular-logo" class="composition__photo composition__photo--p4">
-                            <img src="img/node.png" alt="node-logo" class="composition__photo composition__photo--p5">
-                            <img src="img/jquerry.png" alt="jQuerry-logo" class="composition__photo composition__photo--p6">
-                            <img src="img/bootstrap.png" alt="bootstrap-logo" class="composition__photo composition__photo--p7">
-                            <img src="img/sass.png" alt="sass-logo" class="composition__photo composition__photo--p8">
+                            <img src="img/html5_logo.png" alt="html-logo" class="composition__photo composition__photo--p1" data-aos="fade-up">
+                            <img src="img/css3.png" alt="css-logo" class="composition__photo composition__photo--p2" data-aos="fade-up">
+                            <img src="img/js.png" alt="javascript-logo" class="composition__photo composition__photo--p3" data-aos="fade-up">
+                            <img src="img/angular.png" alt="angular-logo" class="composition__photo composition__photo--p4" data-aos="fade-up">
+                            <img src="img/node.png" alt="node-logo" class="composition__photo composition__photo--p5" data-aos="fade-up">
+                            <img src="img/jquerry.png" alt="jQuerry-logo" class="composition__photo composition__photo--p6" data-aos="fade-up">
+                            <img src="img/bootstrap.png" alt="bootstrap-logo" class="composition__photo composition__photo--p7" data-aos="fade-up">
+                            <img src="img/sass.png" alt="sass-logo" class="composition__photo composition__photo--p8" data-aos="fade-up">
                         </div>
                     </div>
                 </div>
@@ -112,7 +113,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-projects">
+            <section class="section-projects" id="projects">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
                         My Projects
@@ -140,7 +141,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">See More!</a>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +167,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">See More!</a>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +193,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">See More!</a>
                                 </div>
                             </div>
                         </div>
@@ -208,5 +209,23 @@
                 <h1>&copy Mohammed Rizvi 2018</h1>
             </div>
         </footer>
+        <!-- popup modal -->   
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="websites photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="websites photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#projects" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Title</h2>
+                    <h2 class="heading-tertiary u-margin-bottom-small">Subtitle</h2>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nisi consequatur eaque rerum modi ratione ducimus, quos corporis magni inventore? Tempora ipsa obcaecati porro doloribus. Consequatur molestiae non, unde nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nisi consequatur eaque rerum modi ratione ducimus, quos corporis magni inventore? Tempora ipsa obcaecati porro doloribus. Consequatur molestiae non, unde nihil.
+                    </p>
+                    <a href="#" class="btn btn--blue">Button</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
