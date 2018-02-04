@@ -1,3 +1,4 @@
+//photos in experience section
 .composition {
   position: relative;
   &__photo {
@@ -10,41 +11,94 @@
     transition: all .5s;
     // outline-offset: 2rem;
     background: $color-white;
+    
+    //900px and below: made images position relative and floated left
+    @include respond(tab-port) {
+      float: left;
+      position: relative;
+      width: 33.33333%;
+    }
+    
+    //postioning of the 8 images individually 
     &--p1 {
       left: 0;
       top: -2rem;
 
+      //900px and below: removed absolute positioning
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
     &--p2 {
       left: 20%;
       top: -2rem;
+
+      //900px and below: removed absolute positioning
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     &--p3 {
       left: 40%;
       top: -2rem;
+
+      //900px and below: removed absolute positioning
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     &--p4 {
       left: 60%;
       top: -2rem;
+
+      //900px and below: removed absolute positioning
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     &--p5 {
       left: 0;
       top: 12rem;
+
+      //900px and below: removed absolute positioning
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
     &--p6 {
       left: 20%;
       top: 12rem;
+
+      //900px and below: removed absolute positioning
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     &--p7 {
       left: 40%;
       top: 12rem;
+
+      //900px and below: removed absolute positioning
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     &--p8 {
       left: 60%;
       top: 12rem;
+
+      //900px and below: removed absolute positioning
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     
-
     &:hover {
       // outline: .8rem solid $color-primary;
       transform: scale(1.05) translateY(-.5rem);

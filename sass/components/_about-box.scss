@@ -7,6 +7,11 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: transform .3s;
+  
+  //900px and below: decrease padding for panels in about section
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
 
   //making heading color to be white
   &__heading {
@@ -25,6 +30,11 @@
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;
+    
+    //900px and below: removed bottom margin of icon
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   //hover animation effect to make about box to appear larger

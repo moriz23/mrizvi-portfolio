@@ -8,9 +8,19 @@
 }
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
+  
+  //900px and below: decrased bottom margin
+  @include respond(tab-port) {
+    margin-bottom: 3rem;
+  }
 }
 .u-margin-bottom-large {
   margin-bottom: 8rem;
+  
+  //900px and below: decrased bottom margin
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
 }
 
 //adding top margins for headers or buttons

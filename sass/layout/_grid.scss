@@ -6,6 +6,17 @@
   //excluding bottom margin for last row
   &:not(:last-child){
     margin-bottom: $gutter-vertical;
+    
+    //900px and below: decresed bottom margin for each row except last
+    @include respond(tab-port) { 
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+  
+  //900px and below: added left and right padding. Decreasing max-width for row so the content will have some spacing and not take the whole 100%
+  @include respond(tab-port) { 
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   //clearing float mixin
@@ -18,6 +29,16 @@
     //adding margin-right to every column instead of the last
     &:not(:last-child){
       margin-right: $gutter-horizontal;
+
+      //900px and below: removing gutter margins since content will be on one row
+      @include respond(tab-port) { 
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+    //900px and below: making content to be on one row (stacked on top of one another) at 900px and below
+    @include respond(tab-port) { 
+      width: 100% !important;
     }
   }
   
