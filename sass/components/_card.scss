@@ -34,10 +34,19 @@
         background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
       }
       &-2 {
-        background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+        background-image: linear-gradient(to right bottom, $color-blurple-light, $color-blurple-dark);
       }
       &-3 {
-        background-image: linear-gradient(to right bottom, $color-blurple-light, $color-blurple-dark);
+        background-image: linear-gradient(to right bottom, $color-skyblue-light, $color-skyblue-dark);
+      }
+      &-4 {
+        background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark);
+      }
+      &-5 {
+        background-image: linear-gradient(to right bottom, $color-gold-light, $color-gold-dark);
+      }
+      &-6 {
+        background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
       }
     }
   }
@@ -57,6 +66,7 @@
   //project photo on top of card has cool color blend overlay
   &__picture {
     background-size: cover;
+    background-position: center;
     height: 23rem;
     background-blend-mode: screen;
     //added bottom slant to image
@@ -65,15 +75,27 @@
     border-radius: 3px 3px 0 0;
     //first card image has an orange blend/gradient
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark), url(../img/gym-card-header.png);
+      background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark), url(../img/pvitl-splash.png);
     }
-    //second card image green blend/gradient
+    //second card image blue blend/gradient
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/nat-6.jpg);
+      background-image: linear-gradient(to right bottom, $color-blurple-light, $color-blurple-dark), url(../img/pvitl-app.png);
     }
     //third card image blue blend gradient
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-blurple-light, $color-blurple-dark), url(../img/nat-7.jpg);
+      background-image: linear-gradient(to right bottom, $color-skyblue-light, $color-skyblue-dark), url(../img/ratecamp.png);
+    }
+     //fourth card image red blend gradient
+    &--4 {
+      background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark), url(../img/blogapp.png);
+    }
+    //fifth card image gold blend/gradient
+    &--5 {
+      background-image: linear-gradient(to right bottom, $color-gold-light, $color-gold-dark), url(../img/tone.png);
+    }
+    //sixth card image green blend gradient
+    &--6 {
+      background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/gym-card-header.png);
     }
   }
   
@@ -99,12 +121,20 @@
       background-image: linear-gradient(to right bottom, rgba($color-orange-light, .85), rgba($color-orange-dark, .85));
     }
     &--2 {
-      background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));
-    }
-    &--3 {
       background-image: linear-gradient(to right bottom, rgba($color-blurple-light, .85), rgba($color-blurple-dark, .85));
     }
-
+    &--3 {
+      background-image: linear-gradient(to right bottom, rgba($color-skyblue-light, .85), rgba($color-skyblue-dark, .85));
+    }
+    &--4 {
+      background-image: linear-gradient(to right bottom, rgba($color-red-light, .85), rgba($color-red-dark, .85));
+    }
+    &--5 {
+      background-image: linear-gradient(to right bottom, $color-gold-light, $color-gold-dark);
+    }
+    &--6 {
+      background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));
+    }
   }
   
   //card details, intro to the website/project
@@ -175,7 +205,7 @@
     
     //back card styling of centering content
     &__cta {
-      position: relative
+      position: relative;
       top: 0%;
       left: 0;
       transform: translate(0);
