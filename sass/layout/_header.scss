@@ -12,7 +12,7 @@
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  animation: fadeIn ease 2s;
+  // animation: fadeIn ease 2s;
 
   //600px and below: changed shape of polygon
   @include respond(phone) { 
@@ -26,8 +26,8 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
-    animation: moveInBottom 1.5s ease-out .75s;
-    animation-fill-mode: backwards;
+    // animation: moveInBottom 1.5s ease-out .75s;
+    // animation-fill-mode: backwards;
   }
   
   //height of nike logo

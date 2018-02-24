@@ -48,6 +48,9 @@
       &-6 {
         background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
       }
+      &-7 {
+        background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark);
+      }
     }
   }
   
@@ -93,9 +96,13 @@
     &--5 {
       background-image: linear-gradient(to right bottom, $color-gold-light, $color-gold-dark), url(../img/tone.png);
     }
-    //sixth card image green blend gradient
+    //sixth card image green blend/gradient
     &--6 {
       background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/gym-card-header.png);
+    }
+    //seventh card image purple blend/gradient
+    &--7 {
+      background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark), url(../img/dentist-header-card.png);
     }
   }
   
@@ -135,6 +142,9 @@
     &--6 {
       background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));
     }
+    &--7 {
+      background-image: linear-gradient(to right bottom, rgba($color-purple-light, .85), rgba($color-purple-dark, .85));
+    }
   }
   
   //card details, intro to the website/project
@@ -157,20 +167,18 @@
     text-align: center;
   }
   
-  &__price-box {
+  &__link-box {
     text-align: center;
     color: $color-white;
     margin-bottom: 8rem;
-  }
-
-  &__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
-
-  &__price-value {
-    font-size: 6rem;
-    font-weight: 100;
+    .fa-7x {
+      font-size: 20em;
+      color: white;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $color-gray-light-2;
+      }
+    }
   }
 
   @include respond(tab-port) {

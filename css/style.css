@@ -88,10 +88,7 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-    white-space: nowrap;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
+    white-space: nowrap; }
     @media (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 5rem;
@@ -101,8 +98,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
-    text-align: center;
-    animation: moveInRight 1s ease-out; }
+    text-align: center; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
@@ -258,6 +254,8 @@ body {
         background-image: linear-gradient(to right bottom, #ffe35cd9, #a09400d9); }
       .card__side--back-6 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-7 {
+        background-image: linear-gradient(to right bottom, #a3b3ff, #0031a0); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -282,6 +280,8 @@ body {
       background-image: linear-gradient(to right bottom, #ffe35cd9, #a09400d9), url(../img/tone.png); }
     .card__picture--6 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/gym-card-header.png); }
+    .card__picture--7 {
+      background-image: linear-gradient(to right bottom, #a3b3ff, #0031a0), url(../img/dentist-header-card.png); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -308,6 +308,8 @@ body {
       background-image: linear-gradient(to right bottom, #ffe35cd9, #a09400d9); }
     .card__heading-span--6 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--7 {
+      background-image: linear-gradient(to right bottom, rgba(163, 179, 255, 0.85), rgba(0, 49, 160, 0.85)); }
   .card__details {
     width: 85%;
     text-align: justify;
@@ -322,16 +324,16 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-  .card__price-box {
+  .card__link-box {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
+    .card__link-box .fa-7x {
+      font-size: 20em;
+      color: white;
+      transition: all 0.5s ease; }
+      .card__link-box .fa-7x:hover {
+        color: #eee; }
   @media (max-width: 56.25em) {
     .card {
       height: auto;
@@ -500,13 +502,13 @@ body {
     display: table-cell;
     width: 66.666667%;
     vertical-align: middle;
-    padding: 3rem 5rem; }
+    padding: 3rem 3rem 0; }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 31vw; }
   .popup__text {
     font-size: 1.4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -517,12 +519,6 @@ body {
     -moz-column-count: 2;
     -ms-column-gap: 4rem;
     -webkit-column-rule: 1px solid #eee; }
-  .popup:target {
-    opacity: 1;
-    visibility: visible; }
-  .popup:target .popup__content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1); }
   .popup__close:link, .popup__close:visited {
     color: #777;
     position: absolute;
@@ -543,8 +539,7 @@ body {
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  animation: fadeIn ease 2s; }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -552,9 +547,7 @@ body {
   .header__logo-box {
     position: absolute;
     top: 4rem;
-    left: 4rem;
-    animation: moveInBottom 1.5s ease-out .75s;
-    animation-fill-mode: backwards; }
+    left: 4rem; }
   .header__logo {
     height: 8rem; }
   .header__text-box {
@@ -751,7 +744,7 @@ body {
 
 .section-about {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url("https://media1.giphy.com/media/3o72FehvxlFm20eIoM/giphy.gif");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
