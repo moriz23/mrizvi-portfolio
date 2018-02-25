@@ -89,10 +89,13 @@ body {
     font-weight: 400;
     letter-spacing: 3.5rem;
     white-space: nowrap; }
+    @media (max-width: 56.25em) {
+      .heading-primary--main {
+        letter-spacing: 1.5rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 5rem;
-        letter-spacing: 1rem; } }
+        letter-spacing: 0; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -129,6 +132,10 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  .heading-primary--main {
+    letter-spacing: 2.5rem; } }
 
 .u-center-text {
   text-align: center; }
@@ -361,7 +368,15 @@ body {
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
-        font-size: 4rem; } }
+        font-size: 4rem; }
+      .card__link-box {
+        margin-bottom: 2rem; }
+        .card__link-box .fa-7x {
+          font-size: 10rem; } }
+
+@media (min-width: 901px) and (max-width: 1090px) {
+  .mobile-project-text {
+    padding: 0 2rem; } }
 
 .composition {
   position: relative; }
@@ -440,6 +455,14 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+@media (min-width: 901px) and (max-width: 1134px) {
+  .composition__photo {
+    width: 35%; } }
+
+@media (min-width: 901px) and (max-width: 1077px) {
+  .mobile-text {
+    padding-left: 2rem; } }
+
 .about-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -469,6 +492,14 @@ body {
         margin-bottom: 0; } }
   .about-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+
+@media (min-width: 901px) and (max-width: 1086px) {
+  .mobile-about-text {
+    padding: 0 2rem; }
+    .mobile-about-text .about-box__icon {
+      font-size: 4rem; }
+    .mobile-about-text h3, .mobile-about-text p {
+      font-size: 1.2rem; } }
 
 .popup {
   height: 100vh;

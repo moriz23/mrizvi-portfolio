@@ -8,6 +8,7 @@ const popupDiv = document.querySelector("#popup");
 const popupContent = document.querySelector("#popup-content");
 const closeModal = document.querySelector("#close-modal");
 
+
 //data for each project shown in respective modal
 popupData = {
   pvitlHome: {
@@ -23,7 +24,7 @@ popupData = {
     imgTwo: "img/pvitl-app-pop-1.png",
     title: "Pvitl Application",
     subtitle: "Pvitl Application Web App",
-    text: "This is the main web app for the Pvitl Application, which is a database platform that allows businesses and companies to manage large amount of data. It is usually used to organize large events such as NBA games, Oscars, Emmys, etc. I was the Front-End Developer for this project and I helped designed and structured how all of the different features would look. Some of the features I worked on were the dashboard, form builder, search page, database tables, and more. I did some backend work such as routing and storing data, but I mainly did tasks that dealt with the frontend. The application was written with AngularJS, Ruby, Ruby on Rails, JavaScript, jQuery, CSS, SASS, Foundation, and HTML. (In order to see the application you have to sign up and choose a payment plan)",
+    text: "Pvitl Application is a database platform that allows businesses and companies to manage large amount of data collaboratively. It is usually used to organize large events such as NBA games, Oscars, Emmys, etc. I was the Front-End Developer for this project and I helped designed and structured how all of the different features would look. Some of the features I worked on were the dashboard, form builder, search page, database tables, and more. I did some backend work such as routing and storing data, but I mainly did tasks that dealt with the frontend. The application was written with AngularJS, Ruby, Ruby on Rails, JavaScript, jQuery, CSS, SASS, Foundation, and HTML. (In order to see the application you have to sign up and choose a payment plan)",
     link: "https://iworldreg.iworldreg.com/"
   },
   gymtrition: {
@@ -39,15 +40,31 @@ popupData = {
     imgTwo: "img/blog-app-2.png",
     title:"YouBlog Website",
     subtitle: "Solo Practice Project",
-    text: "This was a blog project I did after I completed the bootcamp so that I could gain so more practice in full stack developemnt. The YouBlog site follows the RESTful routing structure in where I created different HTTP requests to send and retrieve  data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
+    text: "I created a blog website after I completed the bootcamp so that I could gain some more practice in full stack developemnt. The YouBlog site follows the RESTful routing structure in where I created different HTTP requests to send and retrieve  data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
     link: "https://youblogapp.herokuapp.com/"
+  },
+  toneAnalyzer: {
+    imgOne: "img/toneAnalyzer-1.png",
+    imgTwo: "img/toneAnalyzer-2.png",
+    title: "Tone Analyzer Website",
+    subtitle: "Group Project in Bootcamp",
+    text: "This was the final group project I had to do at the bootcamp. My group came up with an idea of having a site that allows users to write emails and have them be analyzed. We used IBM's Watson Tone Analyzer API, which examines the text of the written email and displays the tone (happy, sad, angry, etc..). I worked on the front-end and contribute in designing and structuring the website. Some of my tasks were creating the splash page, making it responsive, setting up the main page, creating a sidenav, styling the email editor, and designing the graphs. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, Bootstrap, and AngularJS.",
+    link: "https://toneanalyzer.herokuapp.com/"
+  },
+  rateCamp: {
+    imgOne: "img/rate-camp-1.png",
+    imgTwo: "img/rate-camp-2.png",
+    title: "Rate Camp Website",
+    subtitle: "Solo Practice Project",
+    text: "RateCamp was another website I did after the bootcamp in where my focus was to gain more experience with the back-end. The site allows users to create an account, post a camp site by adding an image and description, and commenting on different posts. Some of the things I learned were user authentication, RESTful routing, and databases.  The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, Bootstrap.",
+    link: "https://ratecamp.herokuapp.com/"
   },
   dentist: {
     imgOne: "img/dentist-1.png",
     imgTwo: "img/dentist-2.png",
     title:"Dentist Website",
     subtitle: "Unfinished Website for Dentist Office",
-    text: "This was a blog project I did after I completed the bootcamp so that I could gain so more practice in full stack developemnt. The YouBlog site follows the RESTful routing structure in where I created different HTTP requests to send and retrieve  data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
+    text: "This was my first paid project in which I was hired to create a website for a dentist office. The site included information, images, and videos of the types of servces the office provides. My boss projected his ideas on a white baord on how he wanted the site to look, and I was able to take his vision and display it onto the site. I was unable to complete it, due to the fact that my boss was let go and he had no need to finish the project. However, I am proud of what I completed so far and still want to include it in my portfolio. The website was written in HTML, CSS, Javascript, jQuery, and Bootstrap.",
     link: "https://desolate-mesa-14985.herokuapp.com/"
   }
 }
@@ -62,6 +79,14 @@ function popup(projects){
   link.href = projects.link;
 }
 
+//function that opens modal and chnages the text of modal
+function modalClickEvent(querySelector, project) {
+  document.querySelector(querySelector).addEventListener("click", function(){
+    openModal() 
+    popup(project);
+  });
+}
+
 //open modal
 function openModal() {
   popupDiv.style = "opacity: 1; visibility: visible;"
@@ -72,35 +97,55 @@ function openModal() {
 closeModal.addEventListener("click", function(){
   popupDiv.style = "opacity: 0; visibility: hidden;"
   popupContent.style = "opacity: 0;"
-})
+});
+
+//shortens text for front side of card
+function frontSideCardText(text, id) {
+  const str = text
+  const res = str.substring(0, 250);
+  document.querySelector(id).innerHTML = res + "...";
+}
 
 //PVITL Home Page Modal
-document.querySelector("#pvitl-home").addEventListener("click", function(){
-  openModal() 
-  popup(popupData.pvitlHome);
-});
+modalClickEvent("#pvitl-home", popupData.pvitlHome);
 
 //PVITL App Modal
-document.querySelector("#pvitl-app").addEventListener("click", function(){
-  openModal() 
-  popup(popupData.pvitlApp);
-});
+modalClickEvent("#pvitl-app", popupData.pvitlApp);
 
 //Gymtrition Modal
-document.querySelector("#gymtrition").addEventListener("click", function(){
-  openModal() 
-  popup(popupData.gymtrition);
-});
+modalClickEvent("#gymtrition", popupData.gymtrition);
 
 //YouBlog Modal
-document.querySelector("#blog-app").addEventListener("click", function(){
-  openModal() 
-  popup(popupData.youblog);
-});
+modalClickEvent("#blog-app", popupData.youblog);
+
+//Tone Analyzer Modal
+modalClickEvent("#tone-analyzer", popupData.toneAnalyzer);
+
+//Rate Campe Modal
+modalClickEvent("#rate-camp", popupData.rateCamp);
 
 //Dentist Modal
-document.querySelector("#dentist-site").addEventListener("click", function(){
-  openModal() 
-  popup(popupData.dentist);
-});
+modalClickEvent("#dentist-site", popupData.dentist);
+
+//PVITL Home Page Front Side Text
+frontSideCardText(popupData.pvitlHome.text, "#pvitl-home-front-card");
+
+//PVITL App Front Side Text
+frontSideCardText(popupData.pvitlApp.text, "#pvitl-app-front-card");
+
+//Gymtrition Front Side Text
+frontSideCardText(popupData.gymtrition.text, "#gymtrition-front-card");
+
+//YouBlog Front Side Text
+frontSideCardText(popupData.youblog.text, "#you-blog-front-card");
+
+//Tone Analyzer Front Side Text
+frontSideCardText(popupData.toneAnalyzer.text, "#tone-analyzer-front-card");
+
+//Rate CampFront Side Text
+frontSideCardText(popupData.rateCamp.text, "#rate-camp-front-card");
+
+//Dentist Side Text
+frontSideCardText(popupData.dentist.text, "#dentist-site-front-card");
+
 

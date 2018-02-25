@@ -42,3 +42,15 @@
     transform: translateY(-1.5rem) scale(1.03);
   }
 }
+
+@media (min-width: 901px) and (max-width: 1086px) {
+  .mobile-about-text{
+    padding: 0 2rem;
+    .about-box__icon {
+      font-size: 4rem;
+    }
+    h3, p {
+      font-size: 1.2rem;
+    }
+  }
+}

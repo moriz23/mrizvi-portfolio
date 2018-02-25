@@ -228,5 +228,17 @@
     &__price-value {
       font-size: 4rem;
     }
+    &__link-box {
+      margin-bottom: 2rem;
+      .fa-7x {
+        font-size: 10rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1090px) {
+  .mobile-project-text {
+    padding: 0 2rem;
   }
 }

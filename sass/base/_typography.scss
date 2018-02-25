@@ -23,10 +23,14 @@ body {
     // animation-name: moveInLeft;
     // animation-duration: 1s;
     // animation-timing-function: ease-out;
+    
+    @include respond(tab-port) { 
+      letter-spacing: 1.5rem;
+    }
 
     @include respond(phone) { 
       font-size: 5rem;
-      letter-spacing: 1rem;
+      letter-spacing: 0;
     }
   }
 
@@ -80,5 +84,11 @@ body {
   font-size: $default-font-size;
   &:not(:last-child){
     margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  .heading-primary--main {
+    letter-spacing: 2.5rem;
   }
 }

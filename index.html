@@ -22,13 +22,13 @@
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Experience</a>
+                        <a href="#experience-section" class="navigation__link">Experience</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">About Me</a>
+                        <a href="#about-section" class="navigation__link">About Me</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">My Projects</a>
+                        <a href="#projects-section" class="navigation__link">My Projects</a>
                     </li>
                 </ul>
             </nav>
@@ -42,19 +42,17 @@
                     <span class="heading-primary--main">Mohammed Rizvi</span>
                     <span class="heading-primary--sub">Frontend Developer</span>
                 </h1>
-
-                <a href="#" class="btn btn--white btn--animated">Scroll Down</a>
             </div>
         </header> 
         <main>
-            <section class="section-experience">
+            <section class="section-experience" id="experience-section">
                 <div class="u-center-text u-margin-bottom-large" data-aos="fade-up">
                     <h2 class="heading-secondary">
                     Languages and Frameworks I Have Used
                     </h2>   
                 </div>
                 <div class="row" data-aos="fade-up">
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 mobile-text">
                         <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet, consectetur</h3>
                         <p class="paragraph">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tempora, deleniti sint ipsum numquam ex fugiat ipsam, soluta aperiam officiis culpa pariatur, voluptatum, magnam blanditiis libero mollitia ad unde natus!
@@ -80,48 +78,48 @@
                 </div>
             </section>
 
-            <section class="section-about">
+            <section class="section-about" id="about-section">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="about-box__heading">My Journey</h2> 
                 </div>
-                <div class="row">
+                <div class="row mobile-about-text">
                    <div class="col-1-of-4">
                        <div class="about-box">
                            <i class="about-box__icon icon-basic-world"></i>
                            <h3 class="heading-tertiary u-margin-bottom-small">Teacher</h3>
-                           <p class="about-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempora architecto officiis quos nihil.</p>
+                           <p class="about-box__text">I started as a high school history teacher where I not only created lessons, but I started to learn how to code.</p>
                        </div>
                    </div>
                     <div class="col-1-of-4">
                         <div class="about-box">
                         <p class="about-box__icon">&#60;&#47;&#62;</p>
                            <h3 class="heading-tertiary u-margin-bottom-small">Rutgers Bootcamp</h3>
-                           <p class="about-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempora architecto officiis quos nihil.</p>
+                           <p class="about-box__text">I was having trouble learing how to code on my own, so I enrolled myself in Rutgers Coding Bootcamp.</p>
                        </div>
                     </div>
                     <div class="col-1-of-4">
                         <div class="about-box">
                            <i class="about-box__icon icon-basic-laptop"></i>
                            <h3 class="heading-tertiary u-margin-bottom-small">Freelance</h3>
-                           <p class="about-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempora architecto officiis quos nihil.</p>
+                           <p class="about-box__text">After the bootcamp, I kept practicing by creating my own projects and eventually I was hired to build a site.</p>
                        </div>
                     </div>
                     <div class="col-1-of-4">
                         <div class="about-box">
                            <i class="about-box__icon icon-basic-webpage-img-txt"></i>
                            <h3 class="heading-tertiary u-margin-bottom-small">Ardian Group Inc.</h3>
-                           <p class="about-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempora architecto officiis quos nihil.</p>
+                           <p class="about-box__text">I finally landed a full time job and now I work as a front-end developer for Ardian Group Inc.</p>
                        </div>
                     </div>
                 </div>
             </section>
-            <section class="section-projects" id="projects">
+            <section class="section-projects" id="projects-section">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
                         My Projects
                     </h2>
                 </div>
-                <div class="row">
+                <div class="row mobile-project-text">
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -130,17 +128,16 @@
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--1">
-                                        PVITL Home Website
+                                        PVITL Home 
                                     </span>    
                                 </h4>
-                                <div class="card__details">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quo assumenda expedita odio doloribus iusto necessitatibus. Necessitatibus fugit voluptatem, eius totam. Debitis nemo ut voluptatibus facilis, quidem sed blanditiis? Placeat.
+                                <div class="card__details" id="pvitl-home-front-card">
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-1">
                                 <div class="card__cta">
                                     <div class="card__link-box">
-                                        <a href="https://github.com/moriz23"><i class="fab fa-github fa-7x"></i></a>
+                                        <a href="https://github.com/moriz23" target="_blank" ><i class="fab fa-github fa-7x"></i></a>
                                     </div>
                                     <a href="#popup" class="btn btn--white" id="pvitl-home">See More!</a>
                                 </div>
@@ -155,17 +152,16 @@
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--2">
-                                        PVITL Application
+                                        PVITL Web App
                                     </span>    
                                 </h4>
-                                <div class="card__details">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quo assumenda expedita odio doloribus iusto necessitatibus. Necessitatibus fugit voluptatem, eius totam. Debitis nemo ut voluptatibus facilis, quidem sed blanditiis? Placeat.
+                                <div class="card__details" id="pvitl-app-front-card">
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-2">
                                 <div class="card__cta">
                                     <div class="card__link-box">
-                                        <a href="https://github.com/moriz23"><i class="fab fa-github fa-7x"></i></a>
+                                        <a href="https://github.com/moriz23" target="_blank" ><i class="fab fa-github fa-7x"></i></a>
                                     </div>
                                     <a href="#popup" class="btn btn--white" id="pvitl-app">See More!</a>
                                 </div>
@@ -180,17 +176,16 @@
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--6">
-                                        Gymtrition Website
+                                        Gymtrition 
                                     </span>    
                                 </h4>
-                                <div class="card__details">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quo assumenda expedita odio doloribus iusto necessitatibus. Necessitatibus fugit voluptatem, eius totam. Debitis nemo ut voluptatibus facilis, quidem sed blanditiis? Placeat.
+                                <div class="card__details" id="gymtrition-front-card">
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-6">
                                 <div class="card__cta">
                                     <div class="card__link-box">
-                                        <a href="https://github.com/matt-taggart/front_end_project"><i class="fab fa-github fa-7x"></i></a>
+                                        <a href="https://github.com/matt-taggart/front_end_project" target="_blank"><i class="fab fa-github fa-7x"></i></a>
                                     </div>
                                     <a href="#popup" class="btn btn--white" id="gymtrition">See More!</a>
                                 </div>
@@ -198,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mobile-project-text">
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -207,17 +202,16 @@
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--4">
-                                        YouBlog Website
+                                        YouBlog 
                                     </span>    
                                 </h4>
-                                <div class="card__details">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quo assumenda expedita odio doloribus iusto necessitatibus. Necessitatibus fugit voluptatem, eius totam. Debitis nemo ut voluptatibus facilis, quidem sed blanditiis? Placeat.
+                                <div class="card__details" id="you-blog-front-card">
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-4">
                                 <div class="card__cta">
                                     <div class="card__link-box">
-                                        <a href="https://github.com/moriz23/YouBlog"><i class="fab fa-github fa-7x"></i></a>
+                                        <a href="https://github.com/moriz23/YouBlog" target="_blank" ><i class="fab fa-github fa-7x"></i></a>
                                     </div>
                                     <a href="#popup" class="btn btn--white" id="blog-app">See More!</a>
                                 </div>
@@ -232,19 +226,18 @@
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--5">
-                                        Tone Analyzer Website
+                                        Tone Analyzer 
                                     </span>    
                                 </h4>
-                                <div class="card__details">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quo assumenda expedita odio doloribus iusto necessitatibus. Necessitatibus fugit voluptatem, eius totam. Debitis nemo ut voluptatibus facilis, quidem sed blanditiis? Placeat.
+                                <div class="card__details" id="tone-analyzer-front-card">
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-5">
                                 <div class="card__cta">
                                     <div class="card__link-box">
-                                        <a href="https://github.com/matt-taggart/tone_analyzer"><i class="fab fa-github fa-7x"></i></a>
+                                        <a href="https://github.com/matt-taggart/tone_analyzer" target="_blank" ><i class="fab fa-github fa-7x" ></i></a>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">See More!</a>
+                                    <a href="#popup" class="btn btn--white" id="tone-analyzer">See More!</a>
                                 </div>
                             </div>
                         </div>
@@ -257,25 +250,24 @@
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--3">
-                                        RateCamp Website
+                                        RateCamp 
                                     </span>    
                                 </h4>
-                                <div class="card__details">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quo assumenda expedita odio doloribus iusto necessitatibus. Necessitatibus fugit voluptatem, eius totam. Debitis nemo ut voluptatibus facilis, quidem sed blanditiis? Placeat.
+                                <div class="card__details" id="rate-camp-front-card">
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-3">
                                 <div class="card__cta">
                                     <div class="card__link-box">
-                                        <a href="https://github.com/moriz23/RateCamp"><i class="fab fa-github fa-7x"></i></a>
+                                        <a href="https://github.com/moriz23/RateCamp" target="_blank" ><i class="fab fa-github fa-7x"></i></a>
                                     </div>
-                                    <a href="#popup" class="btn btn--white">See More!</a>
+                                    <a href="#popup" id="rate-camp" class="btn btn--white">See More!</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mobile-project-text">
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -287,14 +279,13 @@
                                         Dentist Website
                                     </span>    
                                 </h4>
-                                <div class="card__details">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quo assumenda expedita odio doloribus iusto necessitatibus. Necessitatibus fugit voluptatem, eius totam. Debitis nemo ut voluptatibus facilis, quidem sed blanditiis? Placeat.
+                                <div class="card__details" id="dentist-site-front-card">
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-7">
                                 <div class="card__cta">
                                     <div class="card__link-box">
-                                        <a href="https://github.com/moriz23"><i class="fab fa-github fa-7x"></i></a>
+                                        <a href="https://github.com/moriz23" target="_blank"><i class="fab fa-github fa-7x"></i></a>
                                     </div>
                                     <a href="#popup" class="btn btn--white" id="dentist-site">See More!</a>
                                 </div>
@@ -303,7 +294,7 @@
                     </div>
                 </div>
                 <div class="u-center-text u-margin-top-huge">
-                    <a href="https://github.com/moriz23" class="btn btn--blue">View My Github</a>
+                    <a href="https://github.com/moriz23"  class="btn btn--blue" target="_blank">View My Github</a>
                 </div>
             </section>
         </main>
@@ -316,8 +307,8 @@
         <div class="popup" id="popup">
             <div class="popup__content" id="popup-content">
                 <div class="popup__left">
-                    <img src="" alt="websites photo" class="popup__img" id="img-1">
-                    <img src="" alt="websites photo" class="popup__img" id="img-2">
+                    <img src="" alt="s photo" class="popup__img" id="img-1">
+                    <img src="" alt="s photo" class="popup__img" id="img-2">
                 </div>
                 <div class="popup__right">
                     <a id="close-modal" href="#projects" class="popup__close">&times;</a>
@@ -326,7 +317,7 @@
                     <p class="popup__text" id="popup-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nisi consequatur eaque rerum modi ratione ducimus, quos corporis magni inventore? Tempora ipsa obcaecati porro doloribus. Consequatur molestiae non, unde nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nisi consequatur eaque rerum modi ratione ducimus, quos corporis magni inventore? Tempora ipsa obcaecati porro doloribus. Consequatur molestiae non, unde nihil.
                     </p>
-                    <a href="" class="btn btn--blue" id="project-link">Go to site</a>
+                    <a href="" class="btn btn--blue" id="project-link" target="_blank">Go to site</a>
                 </div>
             </div>
         </div>
