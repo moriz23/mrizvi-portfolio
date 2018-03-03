@@ -535,11 +535,26 @@ body {
   .popup__left {
     display: table-cell;
     width: 33.333333%; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
     display: table-cell;
     width: 66.666667%;
     vertical-align: middle;
     padding: 3rem 3rem 0; }
+  .popup-subtitle-btn {
+    display: flex;
+    justify-content: space-between; }
+    .popup-subtitle-btn .project-link {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #1779ba;
+      font-weight: bold;
+      transition: all 0.5s ease; }
+      .popup-subtitle-btn .project-link:hover {
+        color: #000046; }
   .popup__img {
     display: block;
     width: 31vw; }
@@ -550,7 +565,6 @@ body {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
-    column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #eee;
     -moz-column-count: 2;
@@ -568,6 +582,16 @@ body {
     transition: all 0.2s ease; }
   .popup__close:hover {
     color: #1779ba; }
+
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+  .heading-secondary {
+    font-size: 2rem; }
+  .u-margin-bottom-small {
+    margin-bottom: 0; }
+  .popup-subtitle-btn h2, .popup-subtitle-btn .project-link {
+    font-size: 1.2rem; }
+  .popup__text {
+    font-size: 1.2rem; } }
 
 .header {
   position: relative;

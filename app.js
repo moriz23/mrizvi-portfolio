@@ -16,7 +16,7 @@ popupData = {
     imgTwo: "img/pvitl-home-pop-1.png",
     title: "Pvitl Home Website",
     subtitle: "Splash Page for the Pvitl Application",
-    text: "This is the website for the PVITL Web Application, which explains what the application does and the features that are included. I created this site from different mockups given to me and added my own tweaks. My job was to create the website from the mockups and make it responsive for all screen sizes. I added a pattern of having each section alternate from a white background to a linear gradient colorway. I also added animations when you scroll (AOS Library) to make the user experience more engaging and it looks cool. The website includes the home page, pricing page, sign up page, and a login page. There are other links such as About Us and Product Overview, however there are just anchor links. The website was written with AngularJS, Ruby on Rails, HTML, CSS, SASS, Foundation and JavaScript.",
+    text: "This is the website for the PVITL Web Application, which explains what the application does and the features that are included. My job was to create the website from the mockups and make it responsive for all screen sizes. I added a pattern of having each section alternate from a white background to a linear gradient colorway. I also added animations when you scroll (AOS Library) to make the user experience more engaging and it looks cool. The website includes the home page, pricing page, sign up page, and a login page. The website was written with AngularJS, Ruby on Rails, HTML, CSS, SASS, Foundation and JavaScript.",
     link: "https://iworldreg.iworldreg.com/"
   },
   pvitlApp: {
@@ -24,7 +24,7 @@ popupData = {
     imgTwo: "img/pvitl-app-pop-1.png",
     title: "Pvitl Application",
     subtitle: "Pvitl Application Web App",
-    text: "Pvitl Application is a database platform that allows businesses and companies to manage large amount of data collaboratively. It is usually used to organize large events such as NBA games, Oscars, Emmys, etc. I was the Front-End Developer for this project and I helped designed and structured how all of the different features would look. Some of the features I worked on were the dashboard, form builder, search page, database tables, and more. I did some backend work such as routing and storing data, but I mainly did tasks that dealt with the frontend. The application was written with AngularJS, Ruby, Ruby on Rails, JavaScript, jQuery, CSS, SASS, Foundation, and HTML. (In order to see the application you have to sign up and choose a payment plan)",
+    text: "Pvitl Application is a database platform that allows businesses and companies (NBA games, Oscars, Emmys, etc) to manage large amount of data collaboratively. I was the Front-End Developer for this project and I helped designed and structured how all of the different features would look. Some of the features I worked on were the dashboard, form builder, search page, database tables, and more. I did some backend work such as routing and storing data, but I mainly did tasks that dealt with the frontend. The application was written with AngularJS, Ruby, Ruby on Rails, JavaScript, jQuery, CSS, SASS, Foundation, and HTML. (In order to see the application you have to sign up and choose a payment plan)",
     link: "https://iworldreg.iworldreg.com/"
   },
   gymtrition: {
