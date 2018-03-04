@@ -55,22 +55,26 @@
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
+
+::selection {
+  background-color: #1779ba;
+  color: #fff; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -89,10 +93,10 @@ body {
     font-weight: 400;
     letter-spacing: 3.5rem;
     white-space: nowrap; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .heading-primary--main {
         letter-spacing: 1.5rem; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 5rem;
         letter-spacing: 0; } }
@@ -102,7 +106,7 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     text-align: center; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
 
@@ -116,10 +120,10 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
 
@@ -133,7 +137,7 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-@media (min-width: 901px) and (max-width: 1000px) {
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
   .heading-primary--main {
     letter-spacing: 2.5rem; } }
 
@@ -145,13 +149,13 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem; } }
 
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-large {
       margin-bottom: 5rem; } }
 
@@ -342,7 +346,7 @@ body {
       transition: all 0.5s ease; }
       .card__link-box .fa-7x:hover {
         color: #eee; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
       border-radius: 3px;
@@ -375,7 +379,7 @@ body {
         .card__link-box .fa-7x {
           font-size: 10rem; } }
 
-@media (min-width: 901px) and (max-width: 1090px) {
+@media only screen and (min-width: 901px) and (max-width: 1090px) {
   .mobile-project-text {
     padding: 0 2rem; } }
 
@@ -390,7 +394,7 @@ body {
     z-index: 1;
     transition: all .5s;
     background: #fff; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .composition__photo {
         float: left;
         position: relative;
@@ -398,54 +402,54 @@ body {
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p1 {
           top: 0; } }
     .composition__photo--p2 {
       left: 20%;
       top: -2rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p2 {
           top: 0;
           left: 0; } }
     .composition__photo--p3 {
       left: 40%;
       top: -2rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
           top: 0;
           left: 0; } }
     .composition__photo--p4 {
       left: 60%;
       top: -2rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p4 {
           top: 0;
           left: 0; } }
     .composition__photo--p5 {
       left: 0;
       top: 12rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p5 {
           top: 0; } }
     .composition__photo--p6 {
       left: 20%;
       top: 12rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p6 {
           top: 0;
           left: 0; } }
     .composition__photo--p7 {
       left: 40%;
       top: 12rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p7 {
           top: 0;
           left: 0; } }
     .composition__photo--p8 {
       left: 60%;
       top: 12rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p8 {
           top: 0;
           left: 0; } }
@@ -456,11 +460,11 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
-@media (min-width: 901px) and (max-width: 1134px) {
+@media only screen and (min-width: 901px) and (max-width: 1134px) {
   .composition__photo {
     width: 35%; } }
 
-@media (min-width: 901px) and (max-width: 1077px) {
+@media only screen and (min-width: 901px) and (max-width: 1077px) {
   .mobile-text {
     padding-left: 2rem; } }
 
@@ -472,7 +476,7 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .about-box {
       padding: 2rem; } }
   .about-box__heading {
@@ -488,13 +492,13 @@ body {
     background-image: linear-gradient(to right, #1CB5E0, #000046);
     -webkit-background-clip: text;
     color: transparent; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .about-box__icon {
         margin-bottom: 0; } }
   .about-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-@media (min-width: 901px) and (max-width: 1086px) {
+@media only screen and (min-width: 901px) and (max-width: 1086px) {
   .mobile-about-text {
     padding: 0 2rem; }
     .mobile-about-text .about-box__icon {
@@ -535,7 +539,7 @@ body {
   .popup__left {
     display: table-cell;
     width: 33.333333%; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .popup__left {
         display: none; } }
   .popup__right {
@@ -596,7 +600,7 @@ body {
 .header {
   position: relative;
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/lebron.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/lbj2.jpg);
   background-size: cover;
   background-position: top; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -604,10 +608,10 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       height: 95vh; } }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/lebron.jpg); } }
-  @media (max-width: 37.5em) {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/lbj2.jpg); } }
+  @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
@@ -629,10 +633,10 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
@@ -644,11 +648,11 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -672,7 +676,7 @@ body {
   .footer-flex {
     display: flex;
     justify-content: flex-end; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .footer-flex {
         justify-content: center;
         font-size: 1rem; } }
@@ -692,11 +696,11 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__button {
       top: 3rem;
       right: 3rem; } }
@@ -711,11 +715,11 @@ body {
   background-image: radial-gradient(#1CB5E0, #000046);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
@@ -805,19 +809,19 @@ body {
   background: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-experience {
       padding: 20rem 0; } }
 
 .section-about {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url("https://media1.giphy.com/media/3o72FehvxlFm20eIoM/giphy.gif");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url("/img/lbj3.jpg");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
   .section-about > * {
     transform: skewY(7deg); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 10rem 0; } }
 
@@ -825,7 +829,7 @@ body {
   background: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-projects {
       padding: 20rem 0 10rem 0; } }
 
@@ -835,6 +839,6 @@ body {
   background-image: -webkit-linear-gradient(top left, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/nat-4.jpg);
   background-image: -o-linear-gradient(top left, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/nat-4.jpg);
   background-image: linear-gradient(to bottom right, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/nat-4.jpg); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-stories {
       padding: 10rem 0; } }

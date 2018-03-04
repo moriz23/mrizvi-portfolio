@@ -112,13 +112,13 @@
   }
 }
 
-@media (min-width: 901px) and (max-width: 1134px) {
+@media only screen and (min-width: 901px) and (max-width: 1134px) {
   .composition__photo {
     width: 35%;
   }
 }
 
-@media (min-width: 901px) and (max-width: 1077px) {
+@media only screen and (min-width: 901px) and (max-width: 1077px) {
   .mobile-text {
     padding-left: 2rem;
   }
