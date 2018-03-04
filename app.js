@@ -11,6 +11,10 @@ const closeModal = document.querySelector("#close-modal");
 
 //data for each project shown in respective modal
 popupData = {
+  blank: {
+    imgOne: " ",
+    imgTwo: " "
+  }, 
   pvitlHome: {
     imgOne: "img/pvitl-home-pop-2.png",
     imgTwo: "img/pvitl-home-pop-1.png",
@@ -40,15 +44,15 @@ popupData = {
     imgTwo: "img/blog-app-2.png",
     title:"YouBlog Website",
     subtitle: "Solo Practice Project",
-    text: "I created a blog website after I completed the bootcamp so that I could gain some more practice in full stack developemnt. The YouBlog site follows the RESTful routing structure in where I created different HTTP requests to send and retrieve  data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
+    text: "I created a blog website after I completed the bootcamp so that I could gain some more practice in full stack developemnt. The YouBlog site follows the RESTful routing structure in where I created different HTTP requests to send and retrieve data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
     link: "https://youblogapp.herokuapp.com/"
   },
   toneAnalyzer: {
     imgOne: "img/toneAnalyzer-1.png",
     imgTwo: "img/toneAnalyzer-2.png",
-    title: "Tone Analyzer Website",
+    title: "Tone Analyzer",
     subtitle: "Group Project in Bootcamp",
-    text: "This was the final group project I had to do at the bootcamp. My group came up with an idea of having a site that allows users to write emails and have them be analyzed. We used IBM's Watson Tone Analyzer API, which examines the text of the written email and displays the tone (happy, sad, angry, etc..). I worked on the front-end and contribute in designing and structuring the website. Some of my tasks were creating the splash page, making it responsive, setting up the main page, creating a sidenav, styling the email editor, and designing the graphs. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, Bootstrap, and AngularJS.",
+    text: "This was the final group project I had to do at the bootcamp. My group came up with an idea of having a site that allows users to write emails and have them be analyzed. We used IBM's Watson Tone Analyzer API, which examines the text of the written email and displays the emotion. I worked on the front-end and contribute in designing and structuring the website. Some of my tasks were creating the splash page, making it responsive, setting up the main page, creating a sidenav, styling the email editor, and designing the graphs. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, Bootstrap, and AngularJS.",
     link: "https://toneanalyzer.herokuapp.com/"
   },
   rateCamp: {
@@ -97,6 +101,8 @@ function openModal() {
 closeModal.addEventListener("click", function(){
   popupDiv.style = "opacity: 0; visibility: hidden;"
   popupContent.style = "opacity: 0;"
+  popupData.blank.imgOne;
+  popupData.blank.imgTwo;
 });
 
 //shortens text for front side of card
