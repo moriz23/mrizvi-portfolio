@@ -99,11 +99,11 @@
     }
     //sixth card image green blend/gradient
     &--6 {
-      background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/gym-card-header.png);
+      background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/dentist-header-card.png);
     }
     //seventh card image purple blend/gradient
     &--7 {
-      background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark), url(../img/dentist-header-card.png);
+      background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark), url(../img/gym-card-header.png);
     }
   }
   

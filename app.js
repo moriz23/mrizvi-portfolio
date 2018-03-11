@@ -1,7 +1,7 @@
 const imgOne = document.querySelector("#img-1");
 const imgTwo = document.querySelector("#img-2");
 const title = document.querySelector("#title");
-const subtitle = document.querySelector("#subtitle"); 
+const subTitle = document.querySelector("#subtitle"); 
 const text = document.querySelector("#popup-text");
 const link = document.querySelector("#project-link");
 const popupDiv = document.querySelector("#popup");
@@ -66,7 +66,7 @@ popupData = {
   dentist: {
     imgOne: "img/dentist-1.png",
     imgTwo: "img/dentist-2.png",
-    title:"Dentist Website",
+    title:"Infinite Website",
     subtitle: "Unfinished Website for Dentist Office",
     text: "This was my first paid project in which I was hired to create a website for a dentist office. The site included information, images, and videos of the types of servces the office provides. My boss projected his ideas on a white baord on how he wanted the site to look, and I was able to take his vision and display it onto the site. I was unable to complete it, due to the fact that my boss was let go and he had no need to finish the project. However, I am proud of what I completed so far and still want to include it in my portfolio. The website was written in HTML, CSS, Javascript, jQuery, and Bootstrap.",
     link: "https://desolate-mesa-14985.herokuapp.com/"
@@ -78,7 +78,7 @@ function popup(projects){
   imgOne.src = projects.imgOne;
   imgTwo.src = projects.imgTwo;
   title.innerText = projects.title;
-  subtitle.innerText = projects.subtitle;
+  subTitle.innerText = projects.subtitle;
   text.innerText = projects.text;
   link.href = projects.link;
 }
@@ -109,7 +109,7 @@ closeModal.addEventListener("click", function(){
 function frontSideCardText(text, id) {
   const str = text
   const res = str.substring(0, 250);
-  document.querySelector(id).innerHTML = res + "...";
+  document.querySelector(id).innerText = res + "...";
 }
 
 //PVITL Home Page Modal
