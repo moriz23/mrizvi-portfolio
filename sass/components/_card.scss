@@ -166,9 +166,6 @@
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
-    .mobile-link {
-      display: none;
-    }
   }
   
   &__link-box {
@@ -224,12 +221,6 @@
       transform: translate(0);
       width: 100%;
       padding: 7rem 4rem 4rem 4rem;
-      .mobile-link {
-        display: inline-block;
-      }
-      .open-modal-link {
-        display: none;
-      }
     }
     
     &__price-box {
