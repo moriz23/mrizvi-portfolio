@@ -782,6 +782,8 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
+    .card__cta .mobile-link {
+      display: none; }
   .card__link-box {
     text-align: center;
     color: #fff;
@@ -816,6 +818,10 @@ body {
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem; }
+        .card__cta .mobile-link {
+          display: inline-block; }
+        .card__cta .open-modal-link {
+          display: none; }
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
