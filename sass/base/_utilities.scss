@@ -8,7 +8,7 @@
 }
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
-  
+
   //900px and below: decrased bottom margin
   @include respond(tab-port) {
     margin-bottom: 3rem;
@@ -16,7 +16,7 @@
 }
 .u-margin-bottom-large {
   margin-bottom: 8rem;
-  
+
   //900px and below: decrased bottom margin
   @include respond(tab-port) {
     margin-bottom: 5rem;
@@ -24,9 +24,19 @@
 }
 
 //adding top margins for headers or buttons
+.u-margin-top-medium {
+  margin-top: 6rem;
+}
 .u-margin-top-large {
   margin-top: 8rem;
 }
 .u-margin-top-huge {
   margin-top: 10rem;
+}
+
+//added margin for freelance column card
+.margin-bottom-exception {
+  @include respond(tab-port) {
+    margin-bottom: 6rem;
+  }
 }

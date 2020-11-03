@@ -1,13 +1,13 @@
 //styling for each box in about section to be transparent
 .about-box {
-  background-color: rgba($color-white, .8);
+  background-color: rgba($color-white, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-  transition: transform .3s;
-  
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+
   //900px and below: decrease padding for panels in about section
   @include respond(tab-port) {
     padding: 2rem;
@@ -23,14 +23,18 @@
   }
 
   //styling of icons
-  &__icon{
+  &__icon {
     font-size: 6rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
     -webkit-background-clip: text;
     color: transparent;
-    
+
     //900px and below: removed bottom margin of icon
     @include respond(tab-port) {
       margin-bottom: 0;
@@ -41,15 +45,32 @@
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
+
+  //logo images
+  .gateway {
+    background: $gateway-blue;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
+
+  .ardian {
+    width: 100%;
+    background: $color-black;
+    padding: 1rem;
+    margin: 1.5rem 0 2rem 0;
+  }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1086px) {
-  .mobile-about-text{
+  .mobile-about-text {
     padding: 0 2rem;
     .about-box__icon {
       font-size: 4rem;
     }
-    h3, p {
+    h3,
+    p {
       font-size: 1.2rem;
     }
   }

@@ -115,7 +115,7 @@ body {
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #1CB5E0, #000046);
+  background-image: linear-gradient(to right, #1cb5e0, #000046);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -159,11 +159,18 @@ body {
     .u-margin-bottom-large {
       margin-bottom: 5rem; } }
 
+.u-margin-top-medium {
+  margin-top: 6rem; }
+
 .u-margin-top-large {
   margin-top: 8rem; }
 
 .u-margin-top-huge {
   margin-top: 10rem; }
+
+@media only screen and (max-width: 56.25em) {
+  .margin-bottom-exception {
+    margin-bottom: 6rem; } }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -336,8 +343,6 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-    .card__cta .mobile-link {
-      display: none; }
   .card__link-box {
     text-align: center;
     color: #fff;
@@ -372,10 +377,6 @@ body {
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem; }
-        .card__cta .mobile-link {
-          display: inline-block; }
-        .card__cta .open-modal-link {
-          display: none; }
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
@@ -481,7 +482,7 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
+  transition: transform 0.3s; }
   @media only screen and (max-width: 56.25em) {
     .about-box {
       padding: 2rem; } }
@@ -493,9 +494,9 @@ body {
     letter-spacing: 2px; }
   .about-box__icon {
     font-size: 6rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #1CB5E0, #000046);
+    background-image: linear-gradient(to right, #1cb5e0, #000046);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
@@ -503,13 +504,25 @@ body {
         margin-bottom: 0; } }
   .about-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+  .about-box .gateway {
+    background: #005cb9;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%; }
+  .about-box .ardian {
+    width: 100%;
+    background: #000;
+    padding: 1rem;
+    margin: 1.5rem 0 2rem 0; }
 
 @media only screen and (min-width: 901px) and (max-width: 1086px) {
   .mobile-about-text {
     padding: 0 2rem; }
     .mobile-about-text .about-box__icon {
       font-size: 4rem; }
-    .mobile-about-text h3, .mobile-about-text p {
+    .mobile-about-text h3,
+    .mobile-about-text p {
       font-size: 1.2rem; } }
 
 .popup {
@@ -606,7 +619,7 @@ body {
 .header {
   position: relative;
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/lbj2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8));
   background-size: cover;
   background-position: top; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -616,7 +629,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url(../img/lbj2.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -650,16 +663,16 @@ body {
     content: '';
     display: table;
     clear: both; }
-  .row [class^="col-"] {
+  .row [class^='col-'] {
     float: left; }
-    .row [class^="col-"]:not(:last-child) {
+    .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
       @media only screen and (max-width: 56.25em) {
-        .row [class^="col-"]:not(:last-child) {
+        .row [class^='col-']:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
     @media only screen and (max-width: 56.25em) {
-      .row [class^="col-"] {
+      .row [class^='col-'] {
         width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
@@ -668,16 +681,23 @@ body {
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2  * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.flex {
+  display: flex;
+  justify-content: center; }
+  @media only screen and (max-width: 56.25em) {
+    .flex {
+      display: block; } }
 
 .footer {
   background-color: #333;
   font-size: 1.4rem;
-  padding: 1rem;
+  padding: 2rem;
   color: #fff; }
   .footer-flex {
     display: flex;
@@ -718,7 +738,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#1CB5E0, #000046);
+  background-image: radial-gradient(#1cb5e0, #000046);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
@@ -813,7 +833,7 @@ body {
 
 .section-experience {
   background: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 35rem 0;
   margin-top: -20vh; }
   @media only screen and (max-width: 56.25em) {
     .section-experience {
@@ -821,7 +841,7 @@ body {
 
 .section-about {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8)), url("/img/lbj3.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 70, 0.8), rgba(28, 181, 224, 0.8));
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
