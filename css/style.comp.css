@@ -261,7 +261,7 @@ body {
       background-color: #fff; }
     .card__side--back {
       transform: rotateY(180deg); }
-      .card__side--back-kcz {
+      .card__side--back-kp {
         background-image: linear-gradient(to right bottom, #1f67da, #a539d2); }
       .card__side--back-hz {
         background-image: linear-gradient(to right bottom, #A9C47F, #006747); }
@@ -293,8 +293,8 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-radius: 3px 3px 0 0; }
-    .card__picture--kcz {
-      background-image: linear-gradient(to right bottom, #1f67da, #a539d2), url(../img/kcz-header.png); }
+    .card__picture--kp {
+      background-image: linear-gradient(to right bottom, #1f67da, #a539d2), url(../img/kp-header.png); }
     .card__picture--hz {
       background-image: linear-gradient(to right bottom, #A9C47F, #006747), url(../img/hz-header.png); }
     .card__picture--coke {
@@ -327,7 +327,7 @@ body {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    .card__heading-span--kcz {
+    .card__heading-span--kp {
       background-image: linear-gradient(to right bottom, rgba(31, 103, 218, 0.85), rgba(165, 57, 210, 0.85)); }
     .card__heading-span--hz {
       background-image: linear-gradient(to right bottom, rgba(169, 196, 127, 0.85), rgba(0, 103, 71, 0.85)); }

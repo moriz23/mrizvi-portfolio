@@ -6,7 +6,7 @@ const text = document.querySelector("#popup-text");
 const link = document.querySelector("#project-link");
 const popupDiv = document.querySelector("#popup");
 const popupContent = document.querySelector("#popup-content");
-const closeModal = document.querySelector("#close-modal");
+const closeModalButton = document.querySelector("#close-modal");
 
 
 //data for each project shown in respective modal
@@ -15,13 +15,13 @@ popupData = {
     imgOne: " ",
     imgTwo: " "
   },
-  kcz: {
-    imgOne: "img/kcz-pop-2.png",
-    imgTwo: "img/kcz-pop-1.png",
-    title: "Kansas City Zoo",
-    subtitle: "Web Store for Kansas City Zoo",
-    text: "This is the website for the PVITL Web Application, which explains what the application does and the features that are included. My job was to create the website from the mockups and make it responsive for all screen sizes. I added a pattern of having each section alternate from a white background to a linear gradient colorway. I also added animations when you scroll (AOS Library) to make the user experience more engaging and it looks cool. The website includes the home page, pricing page, sign up page, and a login page. The website was written with AngularJS, Ruby on Rails, HTML, CSS, SASS, Foundation and JavaScript.",
-    link: "https://store.kansascityzoo.org/webstore/shop/viewitems.aspx?cg=Webstore&c=GA"
+  kp: {
+    imgOne: "img/kp-pop-2.png",
+    imgTwo: "img/kp-pop-1.png",
+    title: "King Power Mahanakhon",
+    subtitle: "Web Store for King Power Mahanakhon",
+    text: "King Power Mahanakhon was another early project I worked on for Gateway Ticketing, and I was told to use their main site as a design reference. Some challenges I faced on this project was that their main site kept changing so I had to make continuous updates on the fonts, colors, and alignment of elements. Additionally, I had multiple requests over some weeks to make urgent updates and changes. However, I was able to complete all of the client's requests and design their web store so that it matched their main site at that time. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
+    link: "https://ticketing.kingpowermahanakhon.co.th/WebStore/shop/viewitems.aspx?CG=KPMN&C=101&_ga=2.16519039.872916617.1605278202-1159842413.1604457261"
   },
   hz: {
     imgOne: "img/hz-pop-1.png",
@@ -124,13 +124,19 @@ function openModal() {
   popupContent.style = "opacity: 1; transform: translate(-50%, -50%) scale(1);"
 }
 
-//close modal
-closeModal.addEventListener("click", function(){
+//close modal function
+function closeModal(){
   popupDiv.style = "opacity: 0; visibility: hidden;"
   popupContent.style = "opacity: 0;"
   popupData.blank.imgOne;
   popupData.blank.imgTwo;
-});
+}
+
+//close modal
+closeModalButton.addEventListener("click", closeModalButton);
+
+//close modal clicking on background 
+popupDiv.addEventListener('click', closeModal);
 
 //shortens text for front side of card
 function frontSideCardText(text, id) {
@@ -140,7 +146,7 @@ function frontSideCardText(text, id) {
 }
 
 //Kansas City Zoo Page Modal
-modalClickEvent("#kcz", popupData.kcz);
+modalClickEvent("#kp", popupData.kp);
 
 //Houston Zoo Page Modal
 modalClickEvent("#hz", popupData.hz);
@@ -170,7 +176,7 @@ modalClickEvent("#rate-camp", popupData.rateCamp);
 modalClickEvent("#dentist-site", popupData.dentist);
 
 //Kansas City Zoo Front Side Text
-frontSideCardText(popupData.kcz.text, "#kcz-front-card");
+frontSideCardText(popupData.kp.text, "#kp-front-card");
 
 //Houston Zoo Front Side Text
 frontSideCardText(popupData.hz.text, "#hz-front-card");

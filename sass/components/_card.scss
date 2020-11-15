@@ -31,8 +31,8 @@
       transform: rotateY(180deg); 
       
       //background color for back of card
-      &-kcz {
-        background-image: linear-gradient(to right bottom, $color-kcz-blue, $color-kcz-pink);
+      &-kp {
+        background-image: linear-gradient(to right bottom, $color-kp-blue, $color-kp-pink);
       }
       &-hz {
         background-image: linear-gradient(to right bottom, $color-hz-light-green, $color-hz-dark-green);
@@ -87,9 +87,9 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-radius: 3px 3px 0 0;
     //kansas city zoo image has an orange blend/gradient
-    &--kcz {
-      background-image: linear-gradient(to right bottom, $color-kcz-blue,
-      $color-kcz-pink), url(../img/kcz-header.png);
+    &--kp {
+      background-image: linear-gradient(to right bottom, $color-kp-blue,
+      $color-kp-pink), url(../img/kp-header.png);
     }
     //houston zoo image has an orange blend/gradient
     &--hz {
@@ -146,8 +146,8 @@
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    &--kcz {
-      background-image: linear-gradient(to right bottom, rgba($color-kcz-blue, 0.85), rgba($color-kcz-pink, 0.85));
+    &--kp {
+      background-image: linear-gradient(to right bottom, rgba($color-kp-blue, 0.85), rgba($color-kp-pink, 0.85));
     }
     &--hz {
       background-image: linear-gradient(to right bottom, rgba($color-hz-light-green, 0.85), rgba($color-hz-dark-green, 0.85));
