@@ -104,9 +104,11 @@ function popup(projects){
   title.innerText = projects.title;
   subTitle.innerText = projects.subtitle;
   text.innerText = projects.text;
-  link.href = projects.link;
-  if(projects === popupData.pvitlHome || projects === popupData.pvitlApp){
-    return link.remove();
+  if(projects.title.includes('Pvitl')){
+    link.style.display = 'none';
+  } else {
+    link.style.display = 'block';
+    link.href = projects.link;
   }
 }
 
