@@ -14,7 +14,31 @@ popupData = {
   blank: {
     imgOne: " ",
     imgTwo: " "
-  }, 
+  },
+  kcz: {
+    imgOne: "img/kcz-pop-2.png",
+    imgTwo: "img/kcz-pop-1.png",
+    title: "Kansas City Zoo",
+    subtitle: "Web Store for Kansas City Zoo",
+    text: "This is the website for the PVITL Web Application, which explains what the application does and the features that are included. My job was to create the website from the mockups and make it responsive for all screen sizes. I added a pattern of having each section alternate from a white background to a linear gradient colorway. I also added animations when you scroll (AOS Library) to make the user experience more engaging and it looks cool. The website includes the home page, pricing page, sign up page, and a login page. The website was written with AngularJS, Ruby on Rails, HTML, CSS, SASS, Foundation and JavaScript.",
+    link: "https://store.kansascityzoo.org/webstore/shop/viewitems.aspx?cg=Webstore&c=GA"
+  },
+  hz: {
+    imgOne: "img/hz-pop-1.png",
+    imgTwo: "img/hz-pop-2.png",
+    title: "Houston Zoo",
+    subtitle: "Web Store for Houston Zoo",
+    text: "Houston Zoo was a long term project (3 weeks) I worked on during my time at Gateway Ticketing. I was provided multiple mockups/wireframes through AdobeXD and Word Documents. I was able to conceptualize and execute the client’s design into the webstore in a timely manner. Additionally, I was able to complete quick updates when additional changes have been requested from the client. My role was to design/theme their web store so that it matches the design and styles of the client’s mockup/wireframe. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
+    link: "https://tickets.houstonzoo.org/webstore/shop/viewitems.aspx?CG=GA&C=GAEVENTS&_ga=2.60206637.1262030711.1605278103-158984694.1604456968&_gac=1.124503800.1605278103.CjwKCAiAnIT9BRAmEiwANaoE1QziDoHg62_WLmzhVUwYniZqtI6e1CVqZfxupRMEI6buT4q6BgAZHxoCLpwQAvD_BwE"
+  },
+  coke: {
+    imgOne: "img/coke-pop-1.png",
+    imgTwo: "img/coke-pop-2.png",
+    title: "World of Coke Museum",
+    subtitle: "Web Store for World of Coke Museum",
+    text: "One of the earliest projects I worked on for Gateway Ticketing was the World of Coke Museum web store. I was assigned to design and customized their web store so that it matched with their home website. I received no mockups and was told by the client and project manager to look at their main website as a reference. I used Google Dev Tools on World of Coke’s main website to identify the css properties, colors, fonts, and overall theme. I was able to extract all of the properties and stylings I needed in order to make the store match their home site. I made sure that I incorporated responsive design, added w3c standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
+    link: "https://ticketing.worldofcoca-cola.com/webstore/shop/viewItems.aspx?cg=GA&c=GAADMISSION"
+  },
   pvitlHome: {
     imgOne: "img/pvitl-home-pop-2.png",
     imgTwo: "img/pvitl-home-pop-1.png",
@@ -36,7 +60,7 @@ popupData = {
     imgTwo: "img/gym-card-header.png",
     title:"Gymtrition Website",
     subtitle: "Group Project in Bootcamp",
-    text: "This was the first group project I had to do at the Rutgers Bootcamp in 2016. The idea my group and I had was to create a site that allows users to find the closest gym, create a workut routine, and find nutritional information of certain foods. My role was the Front-End Developer and I was assigned to deign and struture how the site will look. I created a parallax scrolling site tht shows an image before the content is shown. I also helped design the nutritional info and workout routine sections. The website was written with HTML, CSS, Materialize.CSS, Javascript, and jQuery.",
+    text: "This was the first group project I had to do at the Rutgers Bootcamp in 2016. The idea my group and I had was to create a site that allows users to find the closest gym, create a workout routine, and find nutritional information of certain foods. My role was the Front-End Developer and I was assigned to deign and structure how the site will look. I created a parallax scrolling site tht shows an image before the content is shown. I also helped design the nutritional info and workout routine sections. The website was written with HTML, CSS, Materialize.CSS, Javascript, and jQuery.",
     link: "https://gymtrition.herokuapp.com/"
   },
   youblog: {
@@ -44,7 +68,7 @@ popupData = {
     imgTwo: "img/blog-app-2.png",
     title:"YouBlog Website",
     subtitle: "Solo Practice Project",
-    text: "I created a blog website after I completed the bootcamp so that I could gain some more practice in full stack developemnt. The YouBlog site follows the RESTful routing structure in where I created different HTTP requests to send and retrieve data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
+    text: "I created a blog website after I completed the bootcamp so that I could gain some more practice in full stack development. The YouBlog site follows the RESTful routing structure in where I created different HTTP requests to send and retrieve data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
     link: "https://youblogapp.herokuapp.com/"
   },
   toneAnalyzer: {
@@ -68,7 +92,7 @@ popupData = {
     imgTwo: "img/dentist-2.png",
     title:"Infinite Website",
     subtitle: "Unfinished Website for Dentist Office",
-    text: "This was my first paid project in which I was hired to create a website for a dentist office. The site included information, images, and videos of the types of servces the office provides. My boss projected his ideas on a white baord on how he wanted the site to look, and I was able to take his vision and display it onto the site. I was unable to complete it, due to the fact that my boss was let go and he had no need to finish the project. However, I am proud of what I completed so far and still want to include it in my portfolio. The website was written in HTML, CSS, Javascript, jQuery, and Bootstrap.",
+    text: "This was my first paid project in which I was hired to create a website for a dentist office. The site included information, images, and videos of the types of services the office provides. My boss projected his ideas on a white board on how he wanted the site to look, and I was able to take his vision and display it onto the site. I was unable to complete it, due to the fact that my boss was let go and he had no need to finish the project. However, I am proud of what I completed so far and still want to include it in my portfolio. The website was written in HTML, CSS, Javascript, jQuery, and Bootstrap.",
     link: "https://desolate-mesa-14985.herokuapp.com/"
   }
 }
@@ -81,9 +105,12 @@ function popup(projects){
   subTitle.innerText = projects.subtitle;
   text.innerText = projects.text;
   link.href = projects.link;
+  if(projects === popupData.pvitlHome || projects === popupData.pvitlApp){
+    return link.remove();
+  }
 }
 
-//function that opens modal and chnages the text of modal
+//function that opens modal and changes the text of modal
 function modalClickEvent(querySelector, project) {
   document.querySelector(querySelector).addEventListener("click", function(){
     openModal() 
@@ -112,6 +139,15 @@ function frontSideCardText(text, id) {
   document.querySelector(id).innerText = res + "...";
 }
 
+//Kansas City Zoo Page Modal
+modalClickEvent("#kcz", popupData.kcz);
+
+//Houston Zoo Page Modal
+modalClickEvent("#hz", popupData.hz);
+
+//World of Coke Page Modal
+modalClickEvent("#coke", popupData.coke);
+
 //PVITL Home Page Modal
 modalClickEvent("#pvitl-home", popupData.pvitlHome);
 
@@ -132,6 +168,15 @@ modalClickEvent("#rate-camp", popupData.rateCamp);
 
 //Dentist Modal
 modalClickEvent("#dentist-site", popupData.dentist);
+
+//Kansas City Zoo Front Side Text
+frontSideCardText(popupData.kcz.text, "#kcz-front-card");
+
+//Houston Zoo Front Side Text
+frontSideCardText(popupData.hz.text, "#hz-front-card");
+
+//World of Coke Front Side Text
+frontSideCardText(popupData.coke.text, "#coke-front-card");
 
 //PVITL Home Page Front Side Text
 frontSideCardText(popupData.pvitlHome.text, "#pvitl-home-front-card");

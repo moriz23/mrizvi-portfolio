@@ -31,6 +31,15 @@
       transform: rotateY(180deg); 
       
       //background color for back of card
+      &-kcz {
+        background-image: linear-gradient(to right bottom, $color-kcz-blue, $color-kcz-pink);
+      }
+      &-hz {
+        background-image: linear-gradient(to right bottom, $color-hz-light-green, $color-hz-dark-green);
+      }
+      &-coke {
+        background-image: linear-gradient(to right bottom, $color-coke-red, $color-coke-green);
+      }
       &-1 {
         background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
       }
@@ -77,31 +86,43 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-radius: 3px 3px 0 0;
-    //first card image has an orange blend/gradient
+    //kansas city zoo image has an orange blend/gradient
+    &--kcz {
+      background-image: linear-gradient(to right bottom, $color-kcz-blue,
+      $color-kcz-pink), url(../img/kcz-header.png);
+    }
+    //houston zoo image has an orange blend/gradient
+    &--hz {
+      background-image: linear-gradient(to right bottom, $color-hz-light-green, $color-hz-dark-green), url(../img/hz-header.png);
+    }
+    &--coke {
+      background-image: linear-gradient(to right bottom, $color-coke-red, $color-coke-green), url(../img/coke-header.png);
+    }
+    //pivtl home card image has an orange blend/gradient
     &--1 {
       background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark), url(../img/pvitl-splash.png);
     }
-    //second card image blue blend/gradient
+    //pivtl app card image blue blend/gradient
     &--2 {
       background-image: linear-gradient(to right bottom, $color-blurple-light, $color-blurple-dark), url(../img/pvitl-app.png);
     }
-    //third card image blue blend gradient
+    //ratecamp card image blue blend gradient
     &--3 {
       background-image: linear-gradient(to right bottom, $color-skyblue-light, $color-skyblue-dark), url(../img/ratecamp.png);
     }
-     //fourth card image red blend gradient
+     //blog post card image red blend gradient
     &--4 {
       background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark), url(../img/blogapp.png);
     }
-    //fifth card image gold blend/gradient
+    //tone analyzer card image gold blend/gradient
     &--5 {
       background-image: linear-gradient(to right bottom, $color-gold-light, $color-gold-dark), url(../img/tone.png);
     }
-    //sixth card image green blend/gradient
+    //dentist card image green blend/gradient
     &--6 {
       background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/dentist-header-card.png);
     }
-    //seventh card image purple blend/gradient
+    //gymtrtition card image purple blend/gradient
     &--7 {
       background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark), url(../img/gym-card-header.png);
     }
@@ -120,11 +141,20 @@
     width: 75%;
   }
   
-  //added gradient background to header title, used box-decoration-break to add padding even though the text is seperated
+  //added gradient background to header title, used box-decoration-break to add padding even though the text is separated
   &__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    &--kcz {
+      background-image: linear-gradient(to right bottom, rgba($color-kcz-blue, 0.85), rgba($color-kcz-pink, 0.85));
+    }
+    &--hz {
+      background-image: linear-gradient(to right bottom, rgba($color-hz-light-green, 0.85), rgba($color-hz-dark-green, 0.85));
+    }
+    &--coke {
+      background-image: linear-gradient(to right bottom, rgba($color-coke-red, 0.85), rgba($color-coke-green, 0.85));
+    }
     &--1 {
       background-image: linear-gradient(to right bottom, rgba($color-orange-light, .85), rgba($color-orange-dark, .85));
     }
