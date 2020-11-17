@@ -16,11 +16,11 @@ popupData = {
     imgTwo: " "
   },
   kp: {
-    imgOne: "img/kp-pop-2.png",
-    imgTwo: "img/kp-pop-1.png",
+    imgOne: "img/kp-header.png",
+    imgTwo: "img/kp-pop-2.png",
     title: "King Power Mahanakhon",
     subtitle: "Web Store for King Power Mahanakhon",
-    text: "King Power Mahanakhon was another early project I worked on for Gateway Ticketing, and I was told to use their main site as a design reference. Some challenges I faced on this project was that their main site kept changing so I had to make continuous updates on the fonts, colors, and alignment of elements. Additionally, I had multiple requests over some weeks to make urgent updates and changes. However, I was able to complete all of the client's requests and design their web store so that it matched their main site at that time. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
+    text: "King Power Mahanakhon was another early project for Gateway Ticketing Systems, and I was told to use their main site as a design reference. Some challenges I faced on this project was that their main site kept changing, forcing me to make continuous updates on the fonts, colors, and alignment of elements. Additionally, I had multiple requests over some weeks to make urgent updates and changes. However, I was able to complete all of the client's requests and match their web store to their main site. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
     link: "https://ticketing.kingpowermahanakhon.co.th/WebStore/shop/viewitems.aspx?CG=KPMN&C=101&_ga=2.16519039.872916617.1605278202-1159842413.1604457261"
   },
   hz: {
@@ -28,7 +28,7 @@ popupData = {
     imgTwo: "img/hz-pop-2.png",
     title: "Houston Zoo",
     subtitle: "Web Store for Houston Zoo",
-    text: "Houston Zoo was a long term project (3 weeks) I worked on during my time at Gateway Ticketing. I was provided multiple mockups/wireframes through AdobeXD and Word Documents. I was able to conceptualize and execute the client’s design into the webstore in a timely manner. Additionally, I was able to complete quick updates when additional changes have been requested from the client. My role was to design/theme their web store so that it matches the design and styles of the client’s mockup/wireframe. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
+    text: "Houston Zoo was a long term project (3 weeks) I worked on during my time at Gateway Ticketing Systems. I was provided multiple mockups/wireframes through AdobeXD and Word Documents. I was able to conceptualize and execute the client’s web store design in a timely manner. Additionally, I was able to complete quick updates when additional changes were requested from the client. My role was to design/theme their web store so that it matched with the client’s mockups/wireframes. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
     link: "https://tickets.houstonzoo.org/webstore/shop/viewitems.aspx?CG=GA&C=GAEVENTS&_ga=2.60206637.1262030711.1605278103-158984694.1604456968&_gac=1.124503800.1605278103.CjwKCAiAnIT9BRAmEiwANaoE1QziDoHg62_WLmzhVUwYniZqtI6e1CVqZfxupRMEI6buT4q6BgAZHxoCLpwQAvD_BwE"
   },
   coke: {
@@ -36,7 +36,7 @@ popupData = {
     imgTwo: "img/coke-pop-2.png",
     title: "World of Coke Museum",
     subtitle: "Web Store for World of Coke Museum",
-    text: "One of the earliest projects I worked on for Gateway Ticketing was the World of Coke Museum web store. I was assigned to design and customized their web store so that it matched with their home website. I received no mockups and was told by the client and project manager to look at their main website as a reference. I used Google Dev Tools on World of Coke’s main website to identify the css properties, colors, fonts, and overall theme. I was able to extract all of the properties and stylings I needed in order to make the store match their home site. I made sure that I incorporated responsive design, added w3c standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
+    text: "One of the earliest projects I worked on for Gateway Ticketing Systems was the World of Coke Museum web store. I was assigned to design and customized their web store so that it matched with their home website. I received no mockups and was told by the client and project manager to look at their main website as a reference. I used Google Dev Tools on their main website to identify the css properties, colors, fonts, and overall theme. I was able to extract all of the properties and stylings I needed in order to make the store match their home site. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
     link: "https://ticketing.worldofcoca-cola.com/webstore/shop/viewItems.aspx?cg=GA&c=GAADMISSION"
   },
   pvitlHome: {
@@ -52,7 +52,7 @@ popupData = {
     imgTwo: "img/pvitl-app-pop-1.png",
     title: "Pvitl Application",
     subtitle: "Pvitl Application Web App",
-    text: "Pvitl Application is a database platform that allows businesses and companies (NBA games, Oscars, Emmys, etc) to manage large amount of data collaboratively. I was the Front-End Developer for this project and I helped designed and structured how all of the different features would look. Some of the features I worked on were the dashboard, form builder, search page, database tables, and more. I did some backend work such as routing and storing data, but I mainly did tasks that dealt with the frontend. The application was written with AngularJS, Ruby, Ruby on Rails, JavaScript, jQuery, CSS, SASS, Foundation, and HTML. (In order to see the application you have to sign up and choose a payment plan)",
+    text: "Pvitl Application is a database platform that allows businesses and companies (NBA games, Oscars, Emmys, etc) to manage large amount of data collaboratively. I was the Frontend Developer for this project and I helped designed and structured how all of the different features would look. Some of the features I worked on were the dashboard, form builder, search page, database tables, and more. I did some backend work such as routing and storing data, but I mainly did tasks that dealt with the frontend. The application was written with AngularJS, Ruby, Ruby on Rails, JavaScript, jQuery, CSS, SASS, Foundation, and HTML. (In order to see the application you have to sign up and choose a payment plan)",
     link: "https://iworldreg.iworldreg.com/"
   },
   gymtrition: {
