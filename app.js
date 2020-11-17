@@ -28,7 +28,7 @@ popupData = {
     imgTwo: "img/hz-pop-2.png",
     title: "Houston Zoo",
     subtitle: "Web Store for Houston Zoo",
-    text: "Houston Zoo was a long term project (3 weeks) I worked on during my time at Gateway Ticketing Systems. I was provided multiple mockups/wireframes through AdobeXD and Word Documents. I was able to conceptualize and execute the client’s web store design in a timely manner. Additionally, I was able to complete quick updates when additional changes were requested from the client. My role was to design/theme their web store so that it matched with the client’s mockups/wireframes. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
+    text: "Houston Zoo was a long term project (3 weeks) I worked on during my time at Gateway Ticketing Systems. I was provided multiple mockups/wireframes through AdobeXD and Word Documents. I was able to conceptualize and execute the client’s web store design in a timely manner. Additionally, I was able to complete quick updates when additional changes were requested from the client. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
     link: "https://tickets.houstonzoo.org/webstore/shop/viewitems.aspx?CG=GA&C=GAEVENTS&_ga=2.60206637.1262030711.1605278103-158984694.1604456968&_gac=1.124503800.1605278103.CjwKCAiAnIT9BRAmEiwANaoE1QziDoHg62_WLmzhVUwYniZqtI6e1CVqZfxupRMEI6buT4q6BgAZHxoCLpwQAvD_BwE"
   },
   coke: {
@@ -44,7 +44,7 @@ popupData = {
     imgTwo: "img/pvitl-home-pop-1.png",
     title: "Pvitl Home Website",
     subtitle: "Splash Page for the Pvitl Application",
-    text: "This is the website for the PVITL Web Application, which explains what the application does and the features that are included. My job was to create the website from the mockups and make it responsive for all screen sizes. I added a pattern of having each section alternate from a white background to a linear gradient colorway. I also added animations when you scroll (AOS Library) to make the user experience more engaging and it looks cool. The website includes the home page, pricing page, sign up page, and a login page. The website was written with AngularJS, Ruby on Rails, HTML, CSS, SASS, Foundation and JavaScript.",
+    text: "This is the website for the PVITL Web Application, which explains what the application does and the features that are included. My job was to create the website from the mockups and make it responsive for all screen sizes. I added a pattern of having each section alternate from a white background to a linear gradient colorway. I also added animations when you scroll (AOS Library) to make the user experience more fun and engaging. The website includes the home page, pricing page, sign up page, and a login page. The website was written with AngularJS, Ruby on Rails, HTML, CSS, SASS, Foundation and JavaScript.",
     link: "https://iworldreg.iworldreg.com/"
   },
   pvitlApp: {
@@ -60,7 +60,7 @@ popupData = {
     imgTwo: "img/gym-card-header.png",
     title:"Gymtrition Website",
     subtitle: "Group Project in Bootcamp",
-    text: "This was the first group project I had to do at the Rutgers Bootcamp in 2016. The idea my group and I had was to create a site that allows users to find the closest gym, create a workout routine, and find nutritional information of certain foods. My role was to design and structure how the site would look. I created a parallax scrolling site tht shows an image before the content is shown. I also helped design the nutritional info and workout routine sections. The website was written with HTML, CSS, Materialize.CSS, Javascript, and jQuery.",
+    text: "This was the first group project I had to do at the Rutgers Bootcamp in 2016. The idea my group and I had was to create a site that allows users to find the closest gym, create a workout routine, and find nutritional information of certain foods. My role was to design and structure how the site would look. I created a parallax scrolling site that shows an image before the content is shown. I also helped design the nutritional info and workout routine sections. The website was written with HTML, CSS, Materialize.CSS, Javascript, and jQuery.",
     link: "https://gymtrition.herokuapp.com/"
   },
   youblog: {
@@ -68,7 +68,7 @@ popupData = {
     imgTwo: "img/blog-app-2.png",
     title:"YouBlog Website",
     subtitle: "Solo Practice Project",
-    text: "I created a blog website after I completed the bootcamp so that I could gain some more practice in full stack development. The YouBlog site follows the RESTful routing structure in where I created different HTTP requests to send and retrieve data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
+    text: "I created a blog website after I completed the bootcamp so that I could gain some more practice in full stack development. The YouBlog site follows the RESTful routing structure in which I created different HTTP requests to send and retrieve data. The site allows users to create, edit, read, and post blog posts. I also worked on the back-end by creating data schemas, storing data from users, and retrieving data to be displayed on the front-end. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, and Semantic UI.",
     link: "https://youblogapp.herokuapp.com/"
   },
   toneAnalyzer: {
@@ -76,7 +76,7 @@ popupData = {
     imgTwo: "img/toneAnalyzer-2.png",
     title: "Tone Analyzer",
     subtitle: "Group Project in Bootcamp",
-    text: "This was the final group project I had to do at the bootcamp. My group came up with an idea of having a site that allows users to write emails and have them be analyzed. We used IBM's Watson Tone Analyzer API, which examines the text of the written email and displays the emotion. I worked on the frontend and contribute in designing and structuring the website. Some of my tasks were creating the splash page, making it responsive, setting up the main page, creating a sidenav, styling the email editor, and designing the graphs. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, Bootstrap, and AngularJS.",
+    text: "This was the final group project I had to do at the bootcamp. My group came up with an idea of having a site that allows users to write emails and have them be analyzed. We used IBM's Watson Tone Analyzer API, which examines the text of the written email and displays the emotion. I worked on the frontend and my role was to design and structure the website. Some of my tasks were creating the splash page, making it responsive, setting up the main page, creating a sidenav, styling the email editor, and designing the graphs. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, Bootstrap, and AngularJS.",
     link: "https://toneanalyzer.herokuapp.com/"
   },
   rateCamp: {
