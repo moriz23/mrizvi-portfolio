@@ -36,7 +36,7 @@ popupData = {
     imgTwo: "img/coke-pop-2.png",
     title: "World of Coke Museum",
     subtitle: "Web Store for World of Coke Museum",
-    text: "One of the earliest projects I worked on for Gateway Ticketing Systems was the World of Coke Museum web store. I was assigned to design and customized their web store so that it matched with their home website. I received no mockups and was told by the client and project manager to look at their main website as a reference. I used Google Dev Tools on their main website to identify the css properties, colors, fonts, and overall theme. I was able to extract all of the properties and stylings I needed in order to make the store match their home site. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
+    text: "One of the earliest projects I worked on for Gateway Ticketing Systems was the World of Coke Museum web store. I was assigned to design and customized their web store so that it matched with their home website. I received no mockups and was told by the client and project manager to look at their main website as a reference. I used Google Dev Tools on their main website to identify the css properties, colors, fonts, and overall theme. I was able to extract all of the properties and stylings I needed in order to make the store and their home website match. I made sure that I incorporated responsive design, added W3C standards, and tested in all browsers. The languages and frameworks I used for this project were HTML, CSS, Stylus, Pug, JavaScript and AngularJS.",
     link: "https://ticketing.worldofcoca-cola.com/webstore/shop/viewItems.aspx?cg=GA&c=GAADMISSION"
   },
   pvitlHome: {
@@ -52,7 +52,7 @@ popupData = {
     imgTwo: "img/pvitl-app-pop-1.png",
     title: "Pvitl Application",
     subtitle: "Pvitl Application Web App",
-    text: "Pvitl Application is a database platform that allows businesses and companies (NBA games, Oscars, Emmys, etc) to manage large amount of data collaboratively. I was the Frontend Developer for this project and I helped designed and structured how all of the different features would look. Some of the features I worked on were the dashboard, form builder, search page, database tables, and more. I did some backend work such as routing and storing data, but I mainly did tasks that dealt with the frontend. The application was written with AngularJS, Ruby, Ruby on Rails, JavaScript, jQuery, CSS, SASS, Foundation, and HTML. (In order to see the application you have to sign up and choose a payment plan)",
+    text: "Pvitl Application is a database platform that allows businesses and companies (NBA games, Oscars, Emmys, etc) to manage large amount of data collaboratively. I was the Frontend Developer for this project and I helped designed and structured how all of the different features would look. Some of the features I worked on were the dashboard, form builder, search page, database tables, and more. I did some backend work such as routing and storing data, but I mainly did tasks that dealt with the frontend. The application was written with AngularJS, Ruby, Ruby on Rails, JavaScript, jQuery, CSS, SASS, Foundation, and HTML.",
     link: "https://iworldreg.iworldreg.com/"
   },
   gymtrition: {
@@ -60,7 +60,7 @@ popupData = {
     imgTwo: "img/gym-card-header.png",
     title:"Gymtrition Website",
     subtitle: "Group Project in Bootcamp",
-    text: "This was the first group project I had to do at the Rutgers Bootcamp in 2016. The idea my group and I had was to create a site that allows users to find the closest gym, create a workout routine, and find nutritional information of certain foods. My role was the Front-End Developer and I was assigned to deign and structure how the site will look. I created a parallax scrolling site tht shows an image before the content is shown. I also helped design the nutritional info and workout routine sections. The website was written with HTML, CSS, Materialize.CSS, Javascript, and jQuery.",
+    text: "This was the first group project I had to do at the Rutgers Bootcamp in 2016. The idea my group and I had was to create a site that allows users to find the closest gym, create a workout routine, and find nutritional information of certain foods. My role was to design and structure how the site would look. I created a parallax scrolling site tht shows an image before the content is shown. I also helped design the nutritional info and workout routine sections. The website was written with HTML, CSS, Materialize.CSS, Javascript, and jQuery.",
     link: "https://gymtrition.herokuapp.com/"
   },
   youblog: {
@@ -76,7 +76,7 @@ popupData = {
     imgTwo: "img/toneAnalyzer-2.png",
     title: "Tone Analyzer",
     subtitle: "Group Project in Bootcamp",
-    text: "This was the final group project I had to do at the bootcamp. My group came up with an idea of having a site that allows users to write emails and have them be analyzed. We used IBM's Watson Tone Analyzer API, which examines the text of the written email and displays the emotion. I worked on the front-end and contribute in designing and structuring the website. Some of my tasks were creating the splash page, making it responsive, setting up the main page, creating a sidenav, styling the email editor, and designing the graphs. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, Bootstrap, and AngularJS.",
+    text: "This was the final group project I had to do at the bootcamp. My group came up with an idea of having a site that allows users to write emails and have them be analyzed. We used IBM's Watson Tone Analyzer API, which examines the text of the written email and displays the emotion. I worked on the frontend and contribute in designing and structuring the website. Some of my tasks were creating the splash page, making it responsive, setting up the main page, creating a sidenav, styling the email editor, and designing the graphs. The website was written in HTML, CSS, Node.JS, MongoDB, Javascript, jQuery, Bootstrap, and AngularJS.",
     link: "https://toneanalyzer.herokuapp.com/"
   },
   rateCamp: {
@@ -92,7 +92,7 @@ popupData = {
     imgTwo: "img/dentist-2.png",
     title:"Infinite Website",
     subtitle: "Unfinished Website for Dentist Office",
-    text: "This was my first paid project in which I was hired to create a website for a dentist office. The site included information, images, and videos of the types of services the office provides. My boss projected his ideas on a white board on how he wanted the site to look, and I was able to take his vision and display it onto the site. I was unable to complete it, due to the fact that my boss was let go and he had no need to finish the project. However, I am proud of what I completed so far and still want to include it in my portfolio. The website was written in HTML, CSS, Javascript, jQuery, and Bootstrap.",
+    text: "This was my first paid project in which I was hired to create a website for a dentist office. The site included information, images, and videos of the types of services the office provides. My boss projected his ideas on a white board on how he wanted the site to look, and I was able to take his vision and bring it to life. I was unable to complete it, due to the fact that my boss was let go and he had no need to finish the project. However, I am proud of what I completed so far and still want to include it in my portfolio. The website was written in HTML, CSS, Javascript, jQuery, and Bootstrap.",
     link: "https://desolate-mesa-14985.herokuapp.com/"
   }
 }
