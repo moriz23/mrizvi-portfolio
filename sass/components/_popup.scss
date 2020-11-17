@@ -101,6 +101,13 @@
       color: $color-primary;
     }
   }
+
+  //600px and below: changed h2 color
+  @include respond(phone) {
+    h2.heading-secondary {
+      color: $color-primary;
+    }
+  }
 }
 
 //screen sizes between 901px to 1000px in width - decrease font size and margins in modal

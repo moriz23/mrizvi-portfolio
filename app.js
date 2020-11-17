@@ -6,7 +6,7 @@ const text = document.querySelector("#popup-text");
 const link = document.querySelector("#project-link");
 const popupDiv = document.querySelector("#popup");
 const popupContent = document.querySelector("#popup-content");
-const closeModalButton = document.querySelector("#close-modal");
+const closeModal = document.querySelector("#close-modal");
 
 
 //data for each project shown in respective modal
@@ -104,7 +104,8 @@ function popup(projects){
   title.innerText = projects.title;
   subTitle.innerText = projects.subtitle;
   text.innerText = projects.text;
-  if(projects.title.includes('Pvitl')){
+  link.href = projects.link;
+  if(projects.title.includes('Pvitl') || projects.title.includes('Tone')){
     link.style.display = 'none';
   } else {
     link.style.display = 'block';
@@ -126,19 +127,13 @@ function openModal() {
   popupContent.style = "opacity: 1; transform: translate(-50%, -50%) scale(1);"
 }
 
-//close modal function
-function closeModal(){
+//close modal
+closeModal.addEventListener("click", function(){
   popupDiv.style = "opacity: 0; visibility: hidden;"
   popupContent.style = "opacity: 0;"
   popupData.blank.imgOne;
   popupData.blank.imgTwo;
-}
-
-//close modal
-closeModalButton.addEventListener("click", closeModalButton);
-
-//close modal clicking on background 
-popupDiv.addEventListener('click', closeModal);
+});
 
 //shortens text for front side of card
 function frontSideCardText(text, id) {

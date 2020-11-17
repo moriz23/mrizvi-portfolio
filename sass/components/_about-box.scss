@@ -50,16 +50,22 @@
   .gateway {
     background: $gateway-blue;
     padding: 1rem;
-    margin-right: 2rem;
     margin-bottom: 1.5rem;
     max-width: 100%;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
   }
 
   .ardian {
     width: 100%;
-    background: $color-black;
+    background: $color-white;
+    border: 1px solid $color-black;
     padding: 1rem;
-    margin: 1.5rem 0 2rem 0;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
   }
 }
 
